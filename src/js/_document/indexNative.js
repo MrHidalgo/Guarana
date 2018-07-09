@@ -1,16 +1,17 @@
-"use strict";
+
 
 /**
  * @description Document DOM ready.
  */
-(function () {
+(function() {
   /**
    *
    * @type {*|jQuery|HTMLElement}
    * @private
    */
-  var _document = document,
-      _window = window;
+  const _document = document,
+    _window = window;
+
 
   /**
    * @description Method call for execution
@@ -19,19 +20,14 @@
    */
 
   function initHamburger() {
-    var btn = _document.querySelector("[hamburger-js]");
+    const btn = _document.querySelector("[hamburger-js]");
 
     console.log(btn);
 
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener("click", (e) => {
       e.currentTarget.classList.toggle("is-active");
     });
   }
   initHamburger();
-})();
 
-/*!
-*
-* Include lib:
-*
-* */
+})();

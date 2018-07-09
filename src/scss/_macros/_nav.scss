@@ -1,8 +1,19 @@
 // NAV :: START
 
 .nav {
+  &__mobile {
+    display: none;
+    @include respond(m_m) {
+      display: block;
+    }
+  }
+
+
   &__list {
     display: flex;
+    @include respond(m_m) {
+      display: none;
+    }
   }
 
 
@@ -21,20 +32,29 @@
 
 
   &__link {
+    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-left: 15px;
-    margin-right: 15px;
     border-radius: 2em;
     background-color: transparent;
     color: $c-bermudaGrey;
     font-size: 16px;
     font-weight: 500;
     @include transition(background-color, color);
+    @include respond(m) {
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-left: 7.5px;
+      margin-right: 7.5px;
+    }
+    @include respond(l) {
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 
     &:hover {
       background-color: $c-bermudaGrey;

@@ -16,21 +16,23 @@
   @extend %grid;
   width: $d-all;
   max-width: 1310px;
-  //@include respond(s) {
-  //  max-width: 540px;
-  //}
-  //@include respond(m) {
-  //  max-width: 720px;
-  //}
-  //@include respond(l) {
-  //  max-width: 960px;
-  //}
-  //@include respond(el) {
-  //  max-width: 1140px;
-  //}
-  //@include respond(w) {
-  //  max-width: 1400px;
-  //}
+
+  /// for develop
+  @include respond(s) {
+    max-width: 1310px;
+  }
+  @include respond(m) {
+    max-width: 1310px;
+  }
+  @include respond(l) {
+    max-width: 1310px;
+  }
+  @include respond(el) {
+    max-width: 1310px;
+  }
+  @include respond(w) {
+    max-width: 1310px;
+  }
 
   &-fluid {
     @extend %grid;
