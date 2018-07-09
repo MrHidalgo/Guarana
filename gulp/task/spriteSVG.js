@@ -37,13 +37,13 @@ gulp.task('spriteSVG', function () {
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(svgMinify(configOption.svgMin))
       .pipe(cheerio({
-        run: function ($) {
-          $('[fill]').removeAttr('fill');
-          $('[stroke]').removeAttr('stroke');
-          $('[style]').removeAttr('style');
-        },
+        // run: function ($) {
+        //   $('[fill]').removeAttr('fill');
+        //   $('[stroke]').removeAttr('stroke');
+        //   $('[style]').removeAttr('style');
+        // },
         parserOptions: {
-          xmlMode: true
+          xmlMode: false
         }
       }))
       .pipe(replace('&gt;', '>'))
@@ -57,6 +57,7 @@ gulp.task('spriteSVG', function () {
                 template: srcPath["templateSCSS"]
               }
             },
+            inline: false,
             example: false
           }
         }

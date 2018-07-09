@@ -1,5 +1,9 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+  &__link {
+    display: flex;
+  }
+}
 
 // LOGOTYPE :: END

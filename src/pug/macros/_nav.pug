@@ -1,5 +1,33 @@
 // NAV :: START
 
+-
+  var navLink = [
+    {
+      href: "#",
+      name: "Our Story"
+    },
+    {
+      href: "#",
+      name: "Services"
+    },
+    {
+      href: "#",
+      name: "Technology"
+    },
+    {
+      href: "#",
+      name: "Portfolio"
+    },
+    {
+      href: "#",
+      name: "Contact"
+    }
+  ];
+
 nav.nav
+  ul.nav__list
+    each val, idx in navLink
+      li.nav__item
+        a.nav__link(href!= navLink[idx].href class="" title="")!= navLink[idx].name
 
 // NAV :: END

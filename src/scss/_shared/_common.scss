@@ -1,3 +1,19 @@
 // COMMON :: START
 
+
+.header--home {
+  svg {
+    polyline,
+    path {
+      //fill: #00c851;
+    }
+    path {
+      &:last-child {
+        //stroke: #00c851;
+      }
+    }
+  }
+}
+
+
 // COMMON :: END
