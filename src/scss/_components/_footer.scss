@@ -3,12 +3,21 @@
 .footer {
   padding-top: 75px;
   min-height: (416px - 80px);
+  @include respond(m_m) {
+    padding-top: 37px;
+  }
 
 
   &__wrapper {
     &-0 {
       display: flex;
       padding-bottom: 64px;
+      @include respond(m_l) {
+        flex-wrap: wrap;
+      }
+      @include respond(m_m) {
+        padding-bottom: 32px;
+      }
     }
 
     &-1 {
@@ -16,6 +25,9 @@
       align-items: center;
       justify-content: space-between;
       min-height: 80px;
+      @include respond(m_s) {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -24,19 +36,75 @@
     width: 100%;
 
     &-0 {
-      max-width: 404px;
-      padding-right: 239px;
+      @include respond(m_m) {
+        margin-bottom: 32px;
+      }
+      @include respond(m_s) {
+        .logo__link {
+          justify-content: center;
+        }
+      }
+      @include respond(m) {
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
+      @include respond(l) {
+        max-width: 254px;
+        padding-right: 89px;
+        margin-bottom: 0;
+      }
+      @include respond(el) {
+        max-width: 304px;
+        padding-right: 139px;
+      }
+      @include respond(w-min) {
+        max-width: 404px;
+        padding-right: 239px;
+      }
     }
-    &-1 {
-      max-width: 324px;
-      padding-right: 24px;
-    }
+    &-1,
     &-2 {
       max-width: 324px;
       padding-right: 24px;
+      @include respond(m_m) {
+        max-width: 50%;
+        margin-bottom: 16px;
+      }
+      @include respond(l) {
+        max-width: 254px;
+        padding-right: 20px;
+      }
+      @include respond(el) {
+        max-width: 324px;
+        padding-right: 24px;
+      }
     }
     &-3 {
-      max-width: calc(100% - (404px + (324px * 2)));
+      @include respond(m_m) {
+        max-width: 100%;
+      }
+      @include respond(l) {
+        max-width: calc(100% - (254px + (254px * 2)));
+      }
+      @include respond(el) {
+        max-width: calc(100% - (304px + (324px * 2)));
+      }
+      @include respond(w-min) {
+        max-width: calc(100% - (404px + (324px * 2)));
+      }
+    }
+    &-1,
+    &-2,
+    &-3 {
+      @include respond(m) {
+        max-width: calc(100% / 3);
+        padding-right: 15px;
+      }
+      @include respond(m_s) {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+      }
     }
   }
 
@@ -44,6 +112,10 @@
   &__nav {
     padding-top: 5px;
     font-family: "SF-Pro-Text", sans-serif;
+    @include respond(m_s) {
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
 
     p {
       padding-bottom: 32px;
@@ -69,6 +141,10 @@
       margin-bottom: 16px;
       color: $c-bismark;
       @include transition(color);
+      @include respond(m_s) {
+        max-width: 100%;
+        justify-content: center;
+      }
 
       &:hover {
         color: $c-gunmetal;

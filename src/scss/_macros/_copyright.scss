@@ -3,6 +3,12 @@
 .copyright {
   color: $c-bismark;
   font-family: "SF-Pro-Text", sans-serif;
+  @include respond(m_s) {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
 }
 
 // COPYRIGHT :: END

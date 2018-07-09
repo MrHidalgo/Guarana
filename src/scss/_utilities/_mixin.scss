@@ -176,8 +176,10 @@ $breakpointsMedia: (
 	"m_l"       : "(max-width: 991px)",
 	"l"         : "(min-width: 992px)",
 	"el"        : "(min-width: 1200px)",
-	"w"         : "(min-width: 1600px)",
-	"hd"        : "(min-width: 1920)"
+	"w-min"     : "(min-width: 1366px)",
+	"w-med"     : "(min-width: 1440px)",
+	"w-max"     : "(min-width: 1600px)",
+	"hd"        : "(min-width: 1920px)"
 ) !default;
 
 @mixin respond($name) {
