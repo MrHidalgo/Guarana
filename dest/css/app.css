@@ -1,3 +1,171 @@
+@font-face {
+  font-family: "SF-Pro-Text-Bold";
+  src: url("../fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Heavy";
+  src: url("../fonts/SF-Pro-Text-Heavy.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Light";
+  src: url("../fonts/SF-Pro-Text-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Medium";
+  src: url("../fonts/SF-Pro-Text-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Regular";
+  src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Semibold";
+  src: url("../fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Bold";
+  src: url("../fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Heavy";
+  src: url("../fonts/SF-Pro-Display-Heavy.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Light";
+  src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Medium";
+  src: url("../fonts/SF-Pro-Display-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("../fonts/SF-Pro-Display-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Semibold";
+  src: url("../fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Black";
+  src: url("../fonts/SF-Pro-Display-Black.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Thin";
+  src: url("../fonts/SF-Pro-Display-Thin.otf") format("opentype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Ultralight";
+  src: url("../fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Bold";
+  src: url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Heavy";
+  src: url("../fonts/SFUIDisplay-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Light";
+  src: url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Medium";
+  src: url("../fonts/SFUIDisplay-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Regular";
+  src: url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Semibold";
+  src: url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Black";
+  src: url("../fonts/SFUIDisplay-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Thin";
+  src: url("../fonts/SFUIDisplay-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Ultralight";
+  src: url("../fonts/SFUIDisplay-Ultralight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
 
 html {
   -ms-overflow-style: scrollbar;

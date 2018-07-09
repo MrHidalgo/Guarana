@@ -7,18 +7,17 @@ html(lang="en")
     include _head
 
   body(
-    class!= bodyClassName
     data-file!= dataPageName
   )
     block header
       include ../components/_header
 
-      #barba-wrapper
-        .barba-container
-          block content
+    #barba-wrapper
+      .barba-container
+        block content
 
-      block footer
-        include ../components/_footer
+    block footer
+      include ../components/_footer
 
   //block script
     include _script

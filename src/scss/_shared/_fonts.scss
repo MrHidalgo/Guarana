@@ -1,7 +1,7 @@
 ///
 /// Mixin generate @font-face
 /// ===============
-@mixin mixinFontFace($fontName, $fontPath, $fontExtension: eot woff2 woff ttf svg) {
+@mixin mixinFontFace($fontName, $fontPath, $fontWeight, $fontExtension: eot woff2 woff ttf svg) {
 	$src: null;
 	$srcEot: null;
 
@@ -48,7 +48,7 @@
 		src: $src;
 
 		font-style: normal;
-		font-weight: normal;
+		font-weight: $fontWeight;
 	}
 }
 
@@ -58,5 +58,31 @@
 ///
 /// Example:
 ///
-/// @include mixinFontFace("JournalRegular", "../fonts/", eot woff2 woff ttf svg);
+/// @include mixinFontFace("JournalRegular", "../fonts/", normal, otf eot woff2 woff ttf svg);
 /// ===============
+@include mixinFontFace("SF-Pro-Text-Bold", "../fonts/", bold, otf);
+@include mixinFontFace("SF-Pro-Text-Heavy", "../fonts/", 800, otf);
+@include mixinFontFace("SF-Pro-Text-Light", "../fonts/", 300, otf);
+@include mixinFontFace("SF-Pro-Text-Medium", "../fonts/", 500, otf);
+@include mixinFontFace("SF-Pro-Text-Regular", "../fonts/", normal, otf);
+@include mixinFontFace("SF-Pro-Text-Semibold", "../fonts/", 600, otf);
+/// ===============
+@include mixinFontFace("SF-Pro-Display-Bold", "../fonts/", bold, otf);
+@include mixinFontFace("SF-Pro-Display-Heavy", "../fonts/", 800, otf);
+@include mixinFontFace("SF-Pro-Display-Light", "../fonts/", 300, otf);
+@include mixinFontFace("SF-Pro-Display-Medium", "../fonts/", 500, otf);
+@include mixinFontFace("SF-Pro-Display-Regular", "../fonts/", normal, otf);
+@include mixinFontFace("SF-Pro-Display-Semibold", "../fonts/", 600, otf);
+@include mixinFontFace("SF-Pro-Display-Black", "../fonts/", 900, otf);
+@include mixinFontFace("SF-Pro-Display-Thin", "../fonts/", 200, otf);
+@include mixinFontFace("SF-Pro-Display-Ultralight", "../fonts/", 100, otf);
+/// ===============
+@include mixinFontFace("SFUIDisplay-Bold", "../fonts/", bold, ttf);
+@include mixinFontFace("SFUIDisplay-Heavy", "../fonts/", 800, ttf);
+@include mixinFontFace("SFUIDisplay-Light", "../fonts/", 300, ttf);
+@include mixinFontFace("SFUIDisplay-Medium", "../fonts/", 500, ttf);
+@include mixinFontFace("SFUIDisplay-Regular", "../fonts/", normal, ttf);
+@include mixinFontFace("SFUIDisplay-Semibold", "../fonts/", 600, ttf);
+@include mixinFontFace("SFUIDisplay-Black", "../fonts/", 900, ttf);
+@include mixinFontFace("SFUIDisplay-Thin", "../fonts/", 200, ttf);
+@include mixinFontFace("SFUIDisplay-Ultralight", "../fonts/", 100, ttf);
