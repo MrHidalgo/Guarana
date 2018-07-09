@@ -451,6 +451,64 @@ input[type="text"] {
 }
 
 
+.title {
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+  color: #273238;
+  font-size: 58px;
+  font-weight: bold;
+}
+
+
+.btn {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-border-radius: 38px;
+          border-radius: 38px;
+  border: 2px solid #cfd8dc;
+  background-color: transparent;
+  color: #77909c;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+
+.btn span {
+  margin-right: 16px;
+}
+
+
+.btn i {
+  background-image: url(../img/sprite.png);
+  background-position: -22px 0px;
+  width: 18px;
+  height: 13px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  
+  .btn i {
+    background-image: url(../img/sprite@2x.png);
+    -webkit-background-size: 55px 35px;
+            background-size: 55px 35px;
+  }
+}
+
+
 .c-grid, .c-grid-fluid {
   width: 100%;
   padding-right: 15px;
@@ -729,7 +787,7 @@ input[type="text"] {
 
 .social__icon--fb {
   background-image: url(../img/sprite.png);
-  background-position: 0px -21px;
+  background-position: -45px 0px;
   width: 10px;
   height: 16px;
 }
@@ -738,15 +796,15 @@ input[type="text"] {
   
   .social__icon--fb {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 38px 37px;
-            background-size: 38px 37px;
+    -webkit-background-size: 55px 35px;
+            background-size: 55px 35px;
   }
 }
 
 
 .social__icon--tw {
   background-image: url(../img/sprite.png);
-  background-position: -22px 0px;
+  background-position: 0px -21px;
   width: 16px;
   height: 14px;
 }
@@ -755,8 +813,8 @@ input[type="text"] {
   
   .social__icon--tw {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 38px 37px;
-            background-size: 38px 37px;
+    -webkit-background-size: 55px 35px;
+            background-size: 55px 35px;
   }
 }
 
@@ -772,8 +830,8 @@ input[type="text"] {
   
   .social__icon--ln {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 38px 37px;
-            background-size: 38px 37px;
+    -webkit-background-size: 55px 35px;
+            background-size: 55px 35px;
   }
 }
 
@@ -1081,6 +1139,47 @@ input[type="text"] {
   padding: 0;
   border-top: 1px aliceblue;
   background-color: transparent;
+}
+
+
+.home .main {
+  min-height: 692px;
+}
+
+
+.home .main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.home .main__wrapper-left, .home .main__wrapper-right {
+  width: 50%;
+}
+
+
+.home .main__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+
+.home .main__title {
+  padding-top: 184px;
+  padding-bottom: 56px;
+}
+
+
+.home .main__btn {
+  margin-bottom: 181px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

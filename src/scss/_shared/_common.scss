@@ -16,4 +16,36 @@
 }
 
 
+.title {
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+  color: $c-gunmetal;
+  font-size: 58px;
+  font-weight: bold;
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 38px;
+  border: 2px solid $c-pattensBlue;
+  background-color: transparent;
+  color: $c-bermudaGrey;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "SF-Pro-Text", sans-serif;
+
+  span {
+    margin-right: 16px;
+  }
+  i {
+    @include retina-sprite($sp-arrow-right-group);
+  }
+}
+
 // COMMON :: END

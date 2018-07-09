@@ -1,0 +1,33 @@
+// MAIN HOME :: START
+
+.home {
+  .main {
+    min-height: 692px;
+
+
+    &__wrapper {
+      display: flex;
+
+      &-left,
+      &-right {
+        width: 50%;
+      }
+      &-right {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+
+    &__title {
+      padding-top: 184px;
+      padding-bottom: 56px;
+    }
+
+    &__btn {
+      margin-bottom: 181px;
+    }
+  }
+}
+
+// MAIN HOME :: END
