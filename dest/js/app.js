@@ -15,19 +15,34 @@
   /**
    * @description Method call for execution
    * =========================
-   * =========================
    */
 
-  function initHamburger() {
-    var btn = _document.querySelector("[hamburger-js]");
+  /**
+   * @description Init all method
+   */
+  function init() {
+    initHamburgerMenu();
+  }
+  init();
 
-    console.log(btn);
+  /**
+   * @description
+   */
+  function initHamburgerMenu() {
+    var btn = _document.querySelector("[hamburger-js]"),
+        navContainer = _document.querySelector(".nav__desktop"),
+        hideScrollElements = _document.querySelectorAll("html, body");
 
     btn.addEventListener("click", function (e) {
+
       e.currentTarget.classList.toggle("is-active");
+      navContainer.classList.toggle("is-show");
+
+      hideScrollElements.forEach(function (val, idx) {
+        val.classList.toggle("is-hideScroll");
+      });
     });
   }
-  initHamburger();
 })();
 
 /*!

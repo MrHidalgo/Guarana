@@ -8,6 +8,10 @@ html,
 body {
   width: $d-all;
   min-height: 100vh;
+
+  &.is-hideScroll {
+    overflow: hidden;
+  }
 }
 
 html {
@@ -28,6 +32,9 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include respond(m_m) {
+    padding-top: 70px;
+  }
 }
 
 * {

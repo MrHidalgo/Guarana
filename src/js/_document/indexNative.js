@@ -16,18 +16,34 @@
   /**
    * @description Method call for execution
    * =========================
-   * =========================
    */
 
-  function initHamburger() {
-    const btn = _document.querySelector("[hamburger-js]");
 
-    console.log(btn);
+  /**
+   * @description Init all method
+   */
+  function init() {
+    initHamburgerMenu();
+  }
+  init();
+
+
+  /**
+   * @description
+   */
+  function initHamburgerMenu() {
+    const btn = _document.querySelector("[hamburger-js]"),
+      navContainer = _document.querySelector(".nav__desktop"),
+      hideScrollElements = _document.querySelectorAll("html, body");
 
     btn.addEventListener("click", (e) => {
+
       e.currentTarget.classList.toggle("is-active");
+      navContainer.classList.toggle("is-show");
+
+      hideScrollElements.forEach((val, idx) => {
+        val.classList.toggle("is-hideScroll");
+      });
     });
   }
-  initHamburger();
-
 })();
