@@ -1,0 +1,53 @@
+// SOCIAL :: START
+
+.social {
+  &__list {
+    display: flex;
+  }
+
+
+  &__item {
+    &:first-child {
+      .social__link {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      .social__link {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 4px;
+    margin-right: 4px;
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 0.7;
+      @include transition(opacity);
+    }
+  }
+
+
+  &__icon {
+    &--fb {
+      @include retina-sprite($sp-fb-group);
+    }
+    &--tw {
+      @include retina-sprite($sp-tw-group);
+    }
+    &--ln {
+      @include retina-sprite($sp-ln-group);
+    }
+  }
+}
+
+// SOCIAL :: END

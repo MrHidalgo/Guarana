@@ -1,0 +1,33 @@
+// SOCIAL :: START
+
+-
+  var socialName = [
+    {
+      href : "#",
+      name : "fb",
+      classIconMod : "fb"
+    },
+    {
+      href : "#",
+      name : "tw",
+      classIconMod : "tw"
+    },
+    {
+      href : "#",
+      name : "ln",
+      classIconMod : "ln"
+    }
+  ];
+
+.social
+  ul.social__list
+    each val, idx in socialName
+      li.social__item
+        a.social__link(
+          href!= socialName[idx].href
+          class=""
+          title=""
+        )
+          i.social__icon(class!="social__icon--" + socialName[idx].classIconMod)
+
+// SOCIAL :: END

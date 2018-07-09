@@ -11,7 +11,7 @@
 ///
 /// GENERATED
 /// ===============
-//@import "_generated/spritePNG";
+@import "_generated/spritePNG";
 //@import "_generated/spriteSVG";
 ///
 /// SHARED
@@ -29,9 +29,11 @@
 /// ===============
 @import "_macros/logotype";
 @import "_macros/nav";
+@import "_macros/copyright";
+@import "_macros/social";
 //@import "_macros/hamburger";
 ///
 /// COMPONENTS
 /// ===============
 @import "_components/header";
-//@import "_components/footer";
+@import "_components/footer";

@@ -1,5 +1,30 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  padding-top: 80px;
+  min-height: (416px - 80px);
+
+
+  &__wrapper {
+    &-0 {}
+
+    &-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 80px;
+    }
+  }
+
+
+  &__line {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0;
+    border-top: 1px rgba(#eceff1, 1);
+    background-color: transparent;
+  }
+}
 
 // FOOTER :: END
