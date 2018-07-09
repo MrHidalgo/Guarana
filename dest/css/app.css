@@ -1,166 +1,166 @@
 @font-face {
-  font-family: "SF-Pro-Text-Bold";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Bold.otf") format("opentype");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "SF-Pro-Text-Heavy";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Heavy.otf") format("opentype");
   font-style: normal;
   font-weight: 800;
 }
 
 @font-face {
-  font-family: "SF-Pro-Text-Light";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Light.otf") format("opentype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "SF-Pro-Text-Medium";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Medium.otf") format("opentype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SF-Pro-Text-Regular";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SF-Pro-Text-Semibold";
+  font-family: "SF-Pro-Text";
   src: url("../fonts/SF-Pro-Text-Semibold.otf") format("opentype");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Bold";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Bold.otf") format("opentype");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Heavy";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Heavy.otf") format("opentype");
   font-style: normal;
   font-weight: 800;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Light";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Medium";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Medium.otf") format("opentype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Regular";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Regular.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Semibold";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Semibold.otf") format("opentype");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Black";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Black.otf") format("opentype");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Thin";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Thin.otf") format("opentype");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "SF-Pro-Display-Ultralight";
+  font-family: "SF-Pro-Display";
   src: url("../fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
   font-style: normal;
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Bold";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Heavy";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Heavy.ttf") format("truetype");
   font-style: normal;
   font-weight: 800;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Light";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Medium";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Regular";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Semibold";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Black";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Thin";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "SFUIDisplay-Ultralight";
+  font-family: "SFUIDisplay";
   src: url("../fonts/SFUIDisplay-Ultralight.ttf") format("truetype");
   font-style: normal;
   font-weight: 100;
@@ -192,7 +192,9 @@ body {
   padding: 0;
   background-color: #fff;
   line-height: 1.42857143;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -291,41 +293,7 @@ input[type="text"] {
 
 .c-grid {
   width: 100%;
-}
-
-@media screen and (min-width: 576px) {
-  
-  .c-grid {
-    max-width: 540px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  
-  .c-grid {
-    max-width: 720px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  
-  .c-grid {
-    max-width: 960px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  
-  .c-grid {
-    max-width: 1140px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  
-  .c-grid {
-    max-width: 1400px;
-  }
+  max-width: 1330px;
 }
 
 
