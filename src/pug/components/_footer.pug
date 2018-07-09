@@ -1,8 +1,62 @@
 // FOOTER :: START
 
+-
+  var footerNav0 = [
+    {
+      href : "#",
+      name : "iOS Development"
+    },
+    {
+      href : "#",
+      name : "Android Development"
+    },
+    {
+      href : "#",
+      name : "An MVP step by step guide"
+    },
+    {
+      href : "#",
+      name : "How to define your scope"
+    }
+  ];
+  var footerNav1 = [
+    {
+      href : "#",
+      name : "Should you go Hybrid or Native?"
+    },
+    {
+      href : "#",
+      name : "How much does an app cost?"
+    },
+    {
+      href : "#",
+      name : "What are the steps of developing an app?"
+    }
+  ];
+  var footerNav2 = [
+    {
+      href : "#",
+      name : "App Store submission process"
+    },
+    {
+      href : "#",
+      name : "App Analytics tools list"
+    }
+  ];
+
 footer#footer.footer
   .c-grid
     .footer__wrapper.footer__wrapper-0
+
+      .footer__col.footer__col-0
+        include ../macros/_logotype
+
+      .footer__col.footer__col-1
+        +footerNav("defining your project", footerNav0)
+      .footer__col.footer__col-2
+        +footerNav("app development", footerNav1)
+      .footer__col.footer__col-3
+        +footerNav("app publishing", footerNav2)
 
   hr.footer__line
 
