@@ -30,7 +30,7 @@
   @include respond(el) {
     max-width: 1310px;
   }
-  @include respond(w) {
+  @include respond(w-min) {
     max-width: 1310px;
   }
 
