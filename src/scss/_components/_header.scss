@@ -7,14 +7,6 @@
   width: 100%;
 
 
-  &--portfolio,
-  &--contact,
-  &--blog
-  {
-    background-color: $c-blackPearl;
-  }
-
-
   &__wrapper {
     display: flex;
     align-items: center;

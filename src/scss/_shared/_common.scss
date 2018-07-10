@@ -3,7 +3,8 @@
 
 .header--portfolio,
 .header--contact,
-.header--blog
+.header--blog,
+.header--technology
 {
   svg {
     polyline,
@@ -15,6 +16,10 @@
         stroke: $c-white;
       }
     }
+  }
+
+  &.header {
+    background-color: $c-blackPearl;
   }
 
   .hamburger-inner {

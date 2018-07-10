@@ -456,15 +456,26 @@ input[type="text"] {
 .header--contact svg polyline,
 .header--contact svg path,
 .header--blog svg polyline,
-.header--blog svg path {
+.header--blog svg path,
+.header--technology svg polyline,
+.header--technology svg path {
   fill: #fff;
 }
 
 
 .header--portfolio svg path:last-child,
 .header--contact svg path:last-child,
-.header--blog svg path:last-child {
+.header--blog svg path:last-child,
+.header--technology svg path:last-child {
   stroke: #fff;
+}
+
+
+.header--portfolio.header,
+.header--contact.header,
+.header--blog.header,
+.header--technology.header {
+  background-color: #181e22;
 }
 
 
@@ -474,21 +485,26 @@ input[type="text"] {
 .header--contact .hamburger-inner::after,
 .header--blog .hamburger-inner,
 .header--blog .hamburger-inner::before,
-.header--blog .hamburger-inner::after {
+.header--blog .hamburger-inner::after,
+.header--technology .hamburger-inner,
+.header--technology .hamburger-inner::before,
+.header--technology .hamburger-inner::after {
   background-color: #fff;
 }
 
 
 .header--portfolio .nav__desktop.is-show,
 .header--contact .nav__desktop.is-show,
-.header--blog .nav__desktop.is-show {
+.header--blog .nav__desktop.is-show,
+.header--technology .nav__desktop.is-show {
   background-color: #181e22;
 }
 
 
 .header--portfolio .nav__link:hover,
 .header--contact .nav__link:hover,
-.header--blog .nav__link:hover {
+.header--blog .nav__link:hover,
+.header--technology .nav__link:hover {
   background-color: #f0f8ff;
   color: #181e22;
 }
@@ -1035,11 +1051,6 @@ input[type="text"] {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-
-.header--portfolio, .header--contact, .header--blog {
-  background-color: #181e22;
 }
 
 
@@ -1735,6 +1746,48 @@ input[type="text"] {
 
 
 .blog .main__title {
+  color: #fff;
+}
+
+
+.technology .main {
+  background-color: #181e22;
+}
+
+
+.technology .main__wrapper {
+  min-height: 460px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .technology .main__wrapper {
+    min-height: 350px;
+  }
+}
+
+
+.technology .main__subtitle {
+  padding-top: 128px;
+  padding-bottom: 8px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #455a64;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .technology .main__subtitle {
+    padding-top: 104px;
+    font-size: 16px;
+  }
+}
+
+
+.technology .main__title {
   color: #fff;
 }
 
