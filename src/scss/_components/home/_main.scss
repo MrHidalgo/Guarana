@@ -2,15 +2,25 @@
 
 .home {
   .main {
-    min-height: 692px;
-
-
     &__wrapper {
       display: flex;
+      min-height: 692px;
+      @include respond(m_m) {
+        flex-wrap: wrap;
+      }
+      @include respond(m) {
+        min-height: 550px;
+      }
+      @include respond(l) {
+        min-height: 692px;
+      }
 
       &-left,
       &-right {
         width: 50%;
+        @include respond(m_m) {
+          width: 100%;
+        }
       }
       &-right {
         display: flex;
@@ -22,10 +32,22 @@
     &__title {
       padding-top: 184px;
       padding-bottom: 56px;
+      @include respond(m_m) {
+        padding-top: 92px;
+        padding-bottom: 26px;
+      }
     }
 
     &__btn {
-      margin-bottom: 181px;
+      @include respond(m_m) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 }

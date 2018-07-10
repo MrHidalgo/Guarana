@@ -20,12 +20,27 @@
   line-height: 1.2;
   letter-spacing: 0.36px;
   color: $c-gunmetal;
-  font-size: 58px;
   font-weight: bold;
+  @include respond(es) {
+    font-size: 30px;
+  }
+  @include respond(l) {
+    font-size: 40px;
+  }
+  @include respond(el) {
+    font-size: 46px;
+  }
+  @include respond(w_med) {
+    font-size: 52px;
+  }
+  @include respond(w_max) {
+    font-size: 58px;
+  }
 }
 
 
 .btn {
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -39,13 +54,43 @@
   font-size: 18px;
   font-weight: 500;
   font-family: "SF-Pro-Text", sans-serif;
+  @include transition(border-color, color);
+  @include respond(m_m) {
+    font-size: 16px;
+  }
+
+
+  &:hover {
+    border-color: $c-gunmetal;
+    color: $c-gunmetal;
+    @include transition(border-color, color);
+
+    i {
+      animation-name: slideArrowRight;
+    }
+  }
+
 
   span {
     margin-right: 16px;
   }
+
+
   i {
     @include retina-sprite($sp-arrow-right-group);
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
   }
 }
+@keyframes slideArrowRight {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
 
+  to {
+    transform: translate3d(50px, 0, 0);
+  }
+}
 // COMMON :: END
