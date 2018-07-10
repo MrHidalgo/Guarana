@@ -1,7 +1,8 @@
 // COMMON :: START
 
 
-.header--portfolio {
+.header--portfolio,
+.header--contact {
   svg {
     polyline,
     path {
@@ -44,6 +45,27 @@
     }
     @include respond(l) {
       font-size: 40px;
+    }
+  }
+  &--large {
+    font-size: 78px;
+    @include respond(es) {
+      font-size: 30px;
+    }
+    @include respond(l) {
+      font-size: 40px;
+    }
+    @include respond(el) {
+      font-size: 46px;
+    }
+    @include respond(w-med) {
+      font-size: 52px;
+    }
+    @include respond(w-max) {
+      font-size: 58px;
+    }
+    @include respond(hd) {
+      font-size: 78px;
     }
   }
 }
