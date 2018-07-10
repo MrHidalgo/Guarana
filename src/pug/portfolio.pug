@@ -1,0 +1,15 @@
+---
+title: Guarana - Portfolio
+favicon: favicon
+
+contentClassName: portfolio
+dataPageName: portfolio
+
+additionalStyleFile: false
+---
+extends shared/_layout
+
+block content
+  div(class!= contentClassName)
+
+    include ./components/portfolio/_main

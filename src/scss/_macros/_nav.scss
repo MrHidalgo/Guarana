@@ -1,12 +1,16 @@
 // NAV :: START
 
 .nav {
+
+
   &__mobile {
     display: none;
     @include respond(m_m) {
       display: block;
     }
   }
+
+
   &__desktop {
     display: block;
     @include respond(m_m) {
@@ -88,10 +92,10 @@
       color: $c-white;
       @include transition(background-color, color);
 
-      //.header--home & {
-      //  background-color: $c-aliceBlue;
-      //  color: $c-blackPearl;
-      //}
+      .header--portfolio & {
+        background-color: $c-aliceBlue;
+        color: $c-blackPearl;
+      }
     }
   }
 }

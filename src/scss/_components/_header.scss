@@ -6,6 +6,10 @@
   left: 0;
   width: 100%;
 
+  &--portfolio {
+    background-color: $c-blackPearl;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

@@ -1,15 +1,15 @@
 // COMMON :: START
 
 
-.header--home {
+.header--portfolio {
   svg {
     polyline,
     path {
-      //fill: #00c851;
+      fill: $c-white;
     }
     path {
       &:last-child {
-        //stroke: #00c851;
+        stroke: $c-white;
       }
     }
   }
@@ -35,6 +35,16 @@
   }
   @include respond(w-max) {
     font-size: 58px;
+  }
+
+
+  &--medium {
+    @include respond(es) {
+      font-size: 30px;
+    }
+    @include respond(l) {
+      font-size: 40px;
+    }
   }
 }
 
