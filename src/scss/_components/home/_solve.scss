@@ -10,12 +10,12 @@
     @include respond(m_m) {
       flex-wrap: wrap;
     }
-    //@include respond(m) {
-    //  min-height: 550px;
-    //}
-    //@include respond(l) {
-    //  min-height: 692px;
-    //}
+    @include respond(m) {
+      min-height: 806px;
+    }
+    @include respond(l) {
+      min-height: 1006px;
+    }
 
     &-left,
     &-right {
@@ -49,6 +49,9 @@
     color: $c-pattensBlue;
     font-size: 22px;
     font-weight: 500;
+    @include respond(m_m) {
+      font-size: 18px;
+    }
   }
 
 

@@ -1477,6 +1477,20 @@ input[type="text"] {
   }
 }
 
+@media screen and (min-width: 768px) {
+  
+  .solve__wrapper {
+    min-height: 806px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .solve__wrapper {
+    min-height: 1006px;
+  }
+}
+
 
 .solve__wrapper-left, .solve__wrapper-right {
   width: 50%;
@@ -1524,6 +1538,13 @@ input[type="text"] {
   color: #cfd8dc;
   font-size: 22px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .solve__subtitle {
+    font-size: 18px;
+  }
 }
 
 
