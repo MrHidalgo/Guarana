@@ -1649,4 +1649,42 @@ input[type="text"] {
   color: #fff;
 }
 
+
+.resources .main__wrapper {
+  min-height: 400px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .resources .main__wrapper {
+    min-height: 350px;
+  }
+}
+
+
+.resources .main__subtitle {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #546e7a;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .resources .main__subtitle {
+    font-size: 18px;
+  }
+}
+
+
+.resources .main__title {
+  padding-top: 86px;
+  padding-bottom: 34px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

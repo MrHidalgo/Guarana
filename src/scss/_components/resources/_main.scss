@@ -1,0 +1,38 @@
+// MAIN RESOURCES :: START
+
+.resources {
+  .main {
+
+
+    &__wrapper {
+      min-height: 400px;
+      text-align: center;
+      @include respond(m_m) {
+        min-height: 350px;
+      }
+    }
+
+
+    &__subtitle {
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: $c-bismark;
+      font-size: 22px;
+      font-weight: normal;
+      font-family: "SF-Pro-Text", sans-serif;
+      @include respond(m_m) {
+        font-size: 18px;
+      }
+    }
+
+
+    &__title {
+      padding-top: 86px;
+      padding-bottom: 34px;
+    }
+  }
+}
+
+// MAIN RESOURCES :: END
