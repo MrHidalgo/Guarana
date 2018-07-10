@@ -509,11 +509,15 @@ input[type="text"] {
 }
 
 
-.header--portfolio .nav__link:hover,
+.header--portfolio .nav__link:hover, .header--portfolio .nav__link.is-active,
 .header--contact .nav__link:hover,
+.header--contact .nav__link.is-active,
 .header--blog .nav__link:hover,
+.header--blog .nav__link.is-active,
 .header--technology .nav__link:hover,
-.header--concept .nav__link:hover {
+.header--technology .nav__link.is-active,
+.header--concept .nav__link:hover,
+.header--concept .nav__link.is-active {
   background-color: #f0f8ff;
   color: #181e22;
 }
@@ -918,6 +922,12 @@ input[type="text"] {
   -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+
+.nav__link.is-active {
+  background-color: #77909c;
+  color: #fff;
 }
 
 

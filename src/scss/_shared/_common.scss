@@ -36,7 +36,8 @@
   }
 
   .nav__link {
-    &:hover {
+    &:hover,
+    &.is-active {
       background-color: $c-aliceBlue;
       color: $c-blackPearl;
     }

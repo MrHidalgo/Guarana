@@ -3,11 +3,11 @@
 -
   var navLink = [
     {
-      href: "#",
+      href: "story.html",
       name: "Our Story"
     },
     {
-      href: "#",
+      href: "services.html",
       name: "Services"
     },
     {
@@ -24,6 +24,13 @@
     }
   ];
 
+mixin link(classMod, attr, val)
+  a.nav__link(
+    href!= attr
+    class= classMod
+    title=""
+  )!= val
+
 nav.nav
   .nav__mobile
     include ../macros/_hamburger
@@ -32,6 +39,17 @@ nav.nav
     ul.nav__list
       each val, idx in navLink
         li.nav__item
-          a.nav__link(href!= navLink[idx].href class="" title="")!= navLink[idx].name
+          if(contentClassName === "story" && idx === 0)
+            +link("is-active", navLink[idx].href, navLink[idx].name)
+          else if(contentClassName === "services" && idx === 1)
+            +link("is-active", navLink[idx].href, navLink[idx].name)
+          else if(contentClassName === "technology" && idx === 2)
+            +link("is-active", navLink[idx].href, navLink[idx].name)
+          else if(contentClassName === "portfolio" && idx === 3)
+            +link("is-active", navLink[idx].href, navLink[idx].name)
+          else if(contentClassName === "contact" && idx === 4)
+            +link("is-active", navLink[idx].href, navLink[idx].name)
+          else
+            +link("", navLink[idx].href, navLink[idx].name)
 
 // NAV :: END

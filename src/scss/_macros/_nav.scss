@@ -92,6 +92,11 @@
       color: $c-white;
       @include transition(background-color, color);
     }
+
+    &.is-active {
+      background-color: $c-bermudaGrey;
+      color: $c-white;
+    }
   }
 }
 
