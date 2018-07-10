@@ -2,20 +2,30 @@
 
 .portfolio {
   .main {
+    position: relative;
     background-color: $c-blackPearl;
 
 
+    &__bg {
+      z-index: 0;
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
     &__wrapper {
+      z-index: 1;
+      position: relative;
       display: flex;
       min-height: 692px;
       @include respond(m_m) {
         flex-wrap: wrap;
-      }
-      @include respond(m) {
-        min-height: 550px;
-      }
-      @include respond(l) {
-        min-height: 692px;
       }
 
       &-left,
@@ -33,13 +43,19 @@
 
 
     &__title {
-      padding-top: 241px;
-      padding-bottom: 135px;
       color: $c-white;
       text-align: center;
       @include respond(m_m) {
         padding-top: 120px;
         padding-bottom: 65px;
+      }
+      @include respond(m) {
+        padding-top: 200px;
+        padding-bottom: 85px;
+      }
+      @include respond(l) {
+        padding-top: 241px;
+        padding-bottom: 135px;
       }
     }
 
@@ -61,6 +77,12 @@
       display: block;
       max-width: 100%;
       height: auto;
+      @include respond(m) {
+        transform: translateX(20%);
+      }
+      @include respond(l) {
+        transform: translateX(0);
+      }
     }
   }
 }
