@@ -30,10 +30,10 @@
   @include respond(el) {
     font-size: 46px;
   }
-  @include respond(w_med) {
+  @include respond(w-med) {
     font-size: 52px;
   }
-  @include respond(w_max) {
+  @include respond(w-max) {
     font-size: 58px;
   }
 }

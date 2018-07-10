@@ -479,6 +479,20 @@ input[type="text"] {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  
+  .title {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  
+  .title {
+    font-size: 58px;
+  }
+}
+
 
 .btn {
   overflow: hidden;
@@ -1296,6 +1310,85 @@ input[type="text"] {
 
 
 .home .main__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.solve {
+  background-color: #181e22;
+}
+
+
+.solve__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 1006px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .solve__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+
+.solve__wrapper-left, .solve__wrapper-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .solve__wrapper-left, .solve__wrapper-right {
+    width: 100%;
+  }
+}
+
+
+.solve__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.solve__title {
+  padding-top: 194px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .solve__title {
+    padding-top: 97px;
+    padding-bottom: 30px;
+  }
+}
+
+
+.solve__subtitle {
+  width: 100%;
+  max-width: 470px;
+  letter-spacing: 0.23px;
+  color: #cfd8dc;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+.solve__img {
   display: block;
   max-width: 100%;
   height: auto;

@@ -1,0 +1,62 @@
+// SOLVE :: START
+
+.solve {
+  background-color: $c-blackPearl;
+
+
+  &__wrapper {
+    display: flex;
+    min-height: 1006px;
+    @include respond(m_m) {
+      flex-wrap: wrap;
+    }
+    //@include respond(m) {
+    //  min-height: 550px;
+    //}
+    //@include respond(l) {
+    //  min-height: 692px;
+    //}
+
+    &-left,
+    &-right {
+      width: 50%;
+      @include respond(m_m) {
+        width: 100%;
+      }
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+  &__title {
+    padding-top: 194px;
+    padding-bottom: 40px;
+    color: $c-white;
+    @include respond(m_m) {
+      padding-top: 97px;
+      padding-bottom: 30px;
+    }
+  }
+
+
+  &__subtitle {
+    width: 100%;
+    max-width: 470px;
+    letter-spacing: 0.23px;
+    color: $c-pattensBlue;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// SOLVE :: END
