@@ -1,0 +1,38 @@
+// MAIN BLOG :: START
+
+.blog {
+  .main {
+    background-color: $c-blackPearl;
+
+
+    &__wrapper {
+      min-height: 460px;
+      text-align: center;
+      @include respond(m_m) {
+        min-height: 350px;
+      }
+    }
+
+
+    &__subtitle {
+      padding-top: 128px;
+      padding-bottom: 8px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #455a64;
+      font-size: 18px;
+      font-weight: 500;
+      @include respond(m_m) {
+        padding-top: 104px;
+        font-size: 16px;
+      }
+    }
+
+
+    &__title {
+      color: $c-white;
+    }
+  }
+}
+
+// MAIN BLOG :: END

@@ -1,0 +1,15 @@
+---
+title: Guarana - Blog
+favicon: favicon
+
+contentClassName: blog
+dataPageName: blog
+
+additionalStyleFile: false
+---
+extends shared/_layout
+
+block content
+  div(class!= contentClassName)
+
+    include ./components/blog/_main

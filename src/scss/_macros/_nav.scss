@@ -30,11 +30,6 @@
         padding-bottom: 50px;
         background-color: $c-white;
         animation-name: zoomIn;
-
-        .header--portfolio &,
-        .header--contact & {
-          background-color: $c-blackPearl;
-        }
       }
     }
   }
@@ -96,12 +91,6 @@
       background-color: $c-bermudaGrey;
       color: $c-white;
       @include transition(background-color, color);
-
-      .header--portfolio &,
-      .header--contact & {
-        background-color: $c-aliceBlue;
-        color: $c-blackPearl;
-      }
     }
   }
 }

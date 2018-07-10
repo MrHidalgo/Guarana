@@ -6,10 +6,14 @@
   left: 0;
   width: 100%;
 
+
   &--portfolio,
-  &--contact {
+  &--contact,
+  &--blog
+  {
     background-color: $c-blackPearl;
   }
+
 
   &__wrapper {
     display: flex;

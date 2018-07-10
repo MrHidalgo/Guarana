@@ -2,7 +2,9 @@
 
 
 .header--portfolio,
-.header--contact {
+.header--contact,
+.header--blog
+{
   svg {
     polyline,
     path {
@@ -14,6 +16,25 @@
       }
     }
   }
+
+  .hamburger-inner {
+    &,
+    &::before,
+    &::after {
+      background-color: $c-white;
+    }
+  }
+
+  .nav__desktop.is-show {
+    background-color: $c-blackPearl;
+  }
+
+  .nav__link {
+    &:hover {
+      background-color: $c-aliceBlue;
+      color: $c-blackPearl;
+    }
+  }
 }
 
 
@@ -23,7 +44,7 @@
   color: $c-gunmetal;
   font-weight: bold;
   @include respond(es) {
-    font-size: 30px;
+    font-size: 35px;
   }
   @include respond(l) {
     font-size: 40px;
@@ -41,7 +62,7 @@
 
   &--medium {
     @include respond(es) {
-      font-size: 30px;
+      font-size: 35px;
     }
     @include respond(l) {
       font-size: 40px;
@@ -50,7 +71,7 @@
   &--large {
     font-size: 78px;
     @include respond(es) {
-      font-size: 30px;
+      font-size: 35px;
     }
     @include respond(l) {
       font-size: 40px;
