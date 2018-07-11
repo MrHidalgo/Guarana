@@ -7,6 +7,8 @@
     padding-top: 119px;
     padding-bottom: 161px;
     @include respond(m_m) {
+      flex-wrap: wrap;
+      min-height: 464px;
       padding-top: 59px;
       padding-bottom: 80px;
     }
@@ -16,6 +18,9 @@
   &__left,
   &__right {
     width: 50%;
+    @include respond(m_m) {
+      width: 100%;
+    }
   }
 
 
@@ -38,12 +43,29 @@
           line-height: 1.2;
           letter-spacing: 0.2px;
           color: $c-blackPearl;
-          font-size: 32px;
+
           font-weight: bold;
+          @include respond(es) {
+            font-size: 24px;
+          }
+          @include respond(m) {
+            font-size: 28px;
+          }
+          @include respond(l) {
+            font-size: 32px;
+          }
         }
         &:nth-child(2) {
-          font-size: 22px;
           font-family: "SF-Pro-Text", sans-serif;
+          @include respond(es) {
+            font-size: 18px;
+          }
+          @include respond(m) {
+            font-size: 20px;
+          }
+          @include respond(l) {
+            font-size: 22px;
+          }
         }
       }
     }

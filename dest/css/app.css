@@ -1859,6 +1859,10 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .values__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    min-height: 464px;
     padding-top: 59px;
     padding-bottom: 80px;
   }
@@ -1867,6 +1871,13 @@ input[type="text"] {
 
 .values__left, .values__right {
   width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .values__left, .values__right {
+    width: 100%;
+  }
 }
 
 
@@ -1887,14 +1898,54 @@ input[type="text"] {
   line-height: 1.2;
   letter-spacing: 0.2px;
   color: #181e22;
-  font-size: 32px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  
+  .values .swiper-slide p:nth-child(1) {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .values .swiper-slide p:nth-child(1) {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .values .swiper-slide p:nth-child(1) {
+    font-size: 32px;
+  }
 }
 
 
 .values .swiper-slide p:nth-child(2) {
-  font-size: 22px;
   font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  
+  .values .swiper-slide p:nth-child(2) {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .values .swiper-slide p:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .values .swiper-slide p:nth-child(2) {
+    font-size: 22px;
+  }
 }
 
 
