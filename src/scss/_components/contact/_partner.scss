@@ -1,0 +1,46 @@
+// PARTNER :: START
+
+.partner {
+  background-color: #f9fafb;
+
+
+  &__wrapper {}
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    @include respond(es) {
+      flex-wrap: wrap;
+    }
+    @include respond(m) {
+      justify-content: space-between;
+    }
+    @include respond(l) {
+      justify-content: space-around;
+    }
+  }
+
+
+  &__item {
+    @include respond(m_m) {
+      width: 50%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    @include respond(m_m) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// PARTNER :: END

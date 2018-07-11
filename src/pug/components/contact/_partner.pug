@@ -1,0 +1,27 @@
+// PARTNER :: START
+
+-
+  var partner = [
+    "./img/img-partner-0",
+    "./img/img-partner-1",
+    "./img/img-partner-2",
+    "./img/img-partner-0",
+    "./img/img-partner-1",
+    "./img/img-partner-2"
+  ];
+
+section#partner.partner
+  .c-grid
+    .partner__wrapper
+
+      ul.partner__list
+        each val, idx in partner
+          li.partner__item
+            img.partner__img(
+              src= partner[idx] + ".png"
+              srcset= partner[idx] + "@2x.png 2x"
+              title=""
+              alt=""
+            )
+
+// PARTNER :: END
