@@ -1,22 +1,50 @@
 // FOOTER BAR :: START
 
 -
-  var footerBarNav = [
-    "Android Development Courses",
-    "iOS Development Courses",
-    "Blog",
-    "Resources",
-    "Referral Program",
-    "Career",
-    "Support"
+  var footerBarData = [
+    {
+      href: "#",
+      name: "Android Development Courses"
+    },
+    {
+      href: "#",
+      name: "iOS Development Courses"
+    },
+    {
+      href: "blog.html",
+      name: "Blog"
+    },
+    {
+      href: "resources.html",
+      name: "Resources"
+    },
+    {
+      href: "#",
+      name: "Referral Program"
+    },
+    {
+      href: "#",
+      name: "Career"
+    },
+    {
+      href: "#",
+      name: "Support"
+    }
   ];
 
 section#bar.bar
   .c-grid
     .bar__wrapper
       ul.bar__list
-        each val, idx in footerBarNav
-          li.bar__item
-            a.bar__link(href="#" class="" title="")!= footerBarNav[idx]
+        each val, idx in footerBarData
+          if(contentClassName === "blog" && idx === 2)
+            li.bar__item
+              a.bar__link.is-active(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
+          else if(contentClassName === "resources" && idx === 3)
+            li.bar__item
+              a.bar__link.is-active(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
+          else
+            li.bar__item
+              a.bar__link(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
 
 // FOOTER BAR :: END

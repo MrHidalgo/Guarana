@@ -85,7 +85,8 @@
       @include transition(background-color);
     }
 
-    &:hover {
+    &:hover,
+    &.is-active {
       opacity: 0.75;
       @include transition(opacity);
 

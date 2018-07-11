@@ -2449,7 +2449,7 @@ input[type="text"] {
 }
 
 
-.bar__link:hover {
+.bar__link:hover, .bar__link.is-active {
   opacity: 0.75;
   -webkit-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
@@ -2457,7 +2457,7 @@ input[type="text"] {
 }
 
 
-.bar__link:hover:after {
+.bar__link:hover:after, .bar__link.is-active:after {
   background-color: #cfd8dc;
   -webkit-transition: background-color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out;
