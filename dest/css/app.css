@@ -1975,6 +1975,7 @@ input[type="text"] {
 
 
 .top__wrapper {
+  position: relative;
   min-height: 785px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1986,6 +1987,45 @@ input[type="text"] {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+
+@media screen and (min-width: 320px) {
+  
+  .top__wrapper {
+    min-height: 485px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  
+  .top__wrapper {
+    min-height: 585px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .top__wrapper {
+    min-height: 685px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .top__wrapper {
+    min-height: 785px;
+  }
+}
+
+
+.top__wrapper svg {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=maps/app.css.map */
