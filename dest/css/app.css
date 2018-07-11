@@ -579,43 +579,38 @@ input[type="text"] {
   }
 }
 
-
-.title--large {
-  font-size: 78px;
-}
-
 @media screen and (min-width: 320px) {
   
   .title--large {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
 
 @media screen and (min-width: 992px) {
   
   .title--large {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   
   .title--large {
-    font-size: 46px;
+    font-size: 52px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   
   .title--large {
-    font-size: 52px;
+    font-size: 58px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   
   .title--large {
-    font-size: 58px;
+    font-size: 68px;
   }
 }
 
@@ -623,6 +618,48 @@ input[type="text"] {
   
   .title--large {
     font-size: 78px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  
+  .title--elarge {
+    font-size: 41px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .title--elarge {
+    font-size: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .title--elarge {
+    font-size: 54px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  .title--elarge {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  
+  .title--elarge {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  
+  .title--elarge {
+    font-size: 80px;
   }
 }
 
@@ -1806,6 +1843,78 @@ input[type="text"] {
 .technology .main__title,
 .concept .main__title {
   color: #fff;
+}
+
+
+.values__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 564px;
+  padding-top: 119px;
+  padding-bottom: 161px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .values__wrapper {
+    padding-top: 59px;
+    padding-bottom: 80px;
+  }
+}
+
+
+.values__left, .values__right {
+  width: 50%;
+}
+
+
+.values__title {
+  color: #cfd8dc;
+}
+
+
+.values .swiper-container {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+}
+
+
+.values .swiper-slide p:nth-child(1) {
+  padding-bottom: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  color: #181e22;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.values .swiper-slide p:nth-child(2) {
+  font-size: 22px;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+
+.values .swiper-pagination {
+  text-align: left;
+}
+
+
+.values .swiper-pagination-bullet {
+  cursor: pointer;
+  width: 40px;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #cfd8dc;
+}
+
+
+.values .swiper-pagination-bullet-active {
+  background-color: #77909c;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

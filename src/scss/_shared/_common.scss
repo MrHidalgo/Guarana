@@ -76,24 +76,43 @@
     }
   }
   &--large {
-    font-size: 78px;
     @include respond(es) {
-      font-size: 35px;
+      font-size: 38px;
     }
     @include respond(l) {
-      font-size: 40px;
+      font-size: 45px;
     }
     @include respond(el) {
-      font-size: 46px;
-    }
-    @include respond(w-med) {
       font-size: 52px;
     }
-    @include respond(w-max) {
+    @include respond(w-med) {
       font-size: 58px;
+    }
+    @include respond(w-max) {
+      font-size: 68px;
     }
     @include respond(hd) {
       font-size: 78px;
+    }
+  }
+  &--elarge {
+    @include respond(es) {
+      font-size: 41px;
+    }
+    @include respond(l) {
+      font-size: 47px;
+    }
+    @include respond(el) {
+      font-size: 54px;
+    }
+    @include respond(w-med) {
+      font-size: 60px;
+    }
+    @include respond(w-max) {
+      font-size: 70px;
+    }
+    @include respond(hd) {
+      font-size: 80px;
     }
   }
 }

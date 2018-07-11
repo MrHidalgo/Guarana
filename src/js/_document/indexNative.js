@@ -17,6 +17,7 @@
    * @description Method call for execution
    * =========================
    */
+  initSwiper();
 
 
   /**
@@ -29,7 +30,7 @@
 
 
   /**
-   * @description
+   * @description Hamburger menu
    */
   function initHamburgerMenu() {
     const btn = _document.querySelector("[hamburger-js]"),
