@@ -2028,4 +2028,96 @@ input[type="text"] {
           transform: translateY(-50%);
 }
 
+
+.bar {
+  background-color: #273238;
+}
+
+
+.bar__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 152px;
+}
+
+
+.bar__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+
+.bar__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-height: 31px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #8fa4ae;
+  font-size: 16px;
+  font-family: "SF-Pro-Text", sans-serif;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+
+.bar__link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 98%;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(207, 216, 220, 0.1);
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+
+.bar__link:hover {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+
+.bar__link:hover:after {
+  background-color: #cfd8dc;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

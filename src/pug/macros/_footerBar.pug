@@ -1,0 +1,22 @@
+// FOOTER BAR :: START
+
+-
+  var footerBarNav = [
+    "Android Development Courses",
+    "iOS Development Courses",
+    "Blog",
+    "Resources",
+    "Referral Program",
+    "Career",
+    "Support"
+  ];
+
+section#bar.bar
+  .c-grid
+    .bar__wrapper
+      ul.bar__list
+        each val, idx in footerBarNav
+          li.bar__item
+            a.bar__link(href="#" class="" title="")!= footerBarNav[idx]
+
+// FOOTER BAR :: END
