@@ -1753,6 +1753,14 @@ input[type="text"] {
   padding-bottom: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .location {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 
 .location__wrapper {
   display: -webkit-box;
@@ -1763,11 +1771,37 @@ input[type="text"] {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .location__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 
 .location__box {
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3);
   min-height: 268px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .location__box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .location__box {
+    width: 100%;
+  }
 }
 
 
@@ -1817,8 +1851,21 @@ input[type="text"] {
 
 .location__box-index {
   color: #455a64;
-  font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 320px) {
+  
+  .location__box-index {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .location__box-index {
+    font-size: 18px;
+  }
 }
 
 
