@@ -56,10 +56,10 @@ function initSwiper() {
     //   el: '.swiper-scrollbar',
     // },
 
-    on: {
-      "slideChange": function () {
-        console.log("slideChange");
-      },
-    }
+    // on: {
+    //   "slideChange": function () {
+    //     console.log("slideChange");
+    //   },
+    // }
   });
 }

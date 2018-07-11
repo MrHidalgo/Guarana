@@ -1968,4 +1968,24 @@ input[type="text"] {
   background-color: #77909c;
 }
 
+
+.top {
+  background-color: #273238;
+}
+
+
+.top__wrapper {
+  min-height: 785px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .top__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 /*# sourceMappingURL=maps/app.css.map */

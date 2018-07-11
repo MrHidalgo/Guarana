@@ -43,7 +43,7 @@ function initSwiper() {
     pagination: {
       el: '.swiper-pagination',
       clickable: true
-    },
+    }
 
     // Navigation arrows
     // navigation: {
@@ -56,11 +56,11 @@ function initSwiper() {
     //   el: '.swiper-scrollbar',
     // },
 
-    on: {
-      "slideChange": function slideChange() {
-        console.log("slideChange");
-      }
-    }
+    // on: {
+    //   "slideChange": function () {
+    //     console.log("slideChange");
+    //   },
+    // }
   });
 }
 

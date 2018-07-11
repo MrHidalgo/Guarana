@@ -1,0 +1,18 @@
+// TOP :: START
+
+.top {
+  background-color: $c-gunmetal;
+
+  &__wrapper {
+    min-height: 785px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include respond(m_m) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+// TOP :: END
