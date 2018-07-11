@@ -86,6 +86,7 @@ function initSwiper() {
    * @description Init all method
    */
   function init() {
+    preventBehavior();
     initHamburgerMenu();
   }
   init();
@@ -105,6 +106,21 @@ function initSwiper() {
 
       hideScrollElements.forEach(function (val, idx) {
         val.classList.toggle("is-hideScroll");
+      });
+    });
+  }
+
+  /**
+   * @description prevent behavior empty link
+   */
+  function preventBehavior() {
+    var link = _document.querySelectorAll("a");
+
+    link.forEach(function (val, idx) {
+      val.addEventListener("click", function (e) {
+        if (val.getAttribute("href") === "#") {
+          e.preventDefault();
+        }
       });
     });
   }

@@ -1,0 +1,76 @@
+// LOCATION :: START
+
+.location {
+  padding-top: 40px;
+  padding-bottom: 32px;
+
+
+  &__wrapper {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  &__box {
+    width: calc(100% / 3);
+    min-height: 268px;
+
+
+    &-title {
+      padding-bottom: 32px;
+      letter-spacing: 0.36px;
+    }
+
+
+    &-index,
+    &-address,
+    &-phone,
+    &-link {
+      font-family: "SF-Pro-Text", sans-serif;
+    }
+
+
+    &-phone,
+    &-link {
+      font-size: 16px;
+    }
+
+
+    &-phone {
+      padding-bottom: 32px;
+      color: #607d8b;
+    }
+
+
+    &-link {
+      display: inline-block;
+      color: #00acff;
+      @include transition(color);
+
+      &:last-child {
+        margin-left: 24px;
+      }
+
+      &:hover {
+        color: $c-blackPearl;
+        @include transition(color);
+      }
+    }
+
+
+    &-index {
+      color: $c-sanJuan;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+
+    &-address {
+      padding-bottom: 16px;
+      color: #b0bec5;
+    }
+  }
+}
+
+// LOCATION :: END

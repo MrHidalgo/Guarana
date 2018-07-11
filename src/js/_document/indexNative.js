@@ -24,6 +24,7 @@
    * @description Init all method
    */
   function init() {
+    preventBehavior();
     initHamburgerMenu();
   }
   init();
@@ -44,6 +45,22 @@
 
       hideScrollElements.forEach((val, idx) => {
         val.classList.toggle("is-hideScroll");
+      });
+    });
+  }
+
+
+  /**
+   * @description prevent behavior empty link
+   */
+  function preventBehavior() {
+    const link = _document.querySelectorAll("a");
+
+    link.forEach((val, idx) => {
+      val.addEventListener("click", (e) => {
+        if(val.getAttribute("href") === "#") {
+          e.preventDefault();
+        }
       });
     });
   }
