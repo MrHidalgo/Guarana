@@ -1103,10 +1103,12 @@ input[type="text"] {
 
 
 .header {
-  position: absolute;
+  z-index: 10;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #fff;
 }
 
 
@@ -1745,6 +1747,11 @@ input[type="text"] {
         -ms-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+
+.connect {
+  background-color: #f9fafb;
 }
 
 
