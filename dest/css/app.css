@@ -1751,7 +1751,71 @@ input[type="text"] {
 
 
 .connect {
+  position: relative;
+  min-height: 1024px;
   background-color: #f9fafb;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .connect {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+}
+
+
+.connect__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.connect__bg-left, .connect__bg-right {
+  width: 50%;
+  height: 100%;
+}
+
+
+.connect__bg-left {
+  background-image: url("../img/img-bg-connect__contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+
+.connect .c-grid {
+  z-index: 1;
+  position: relative;
+}
+
+
+.connect__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.connect__wrapper-left, .connect__wrapper-right {
+  width: 50%;
+}
+
+
+.connect__wrapper-right {
+  padding-top: 80px;
+  padding-left: 80px;
 }
 
 

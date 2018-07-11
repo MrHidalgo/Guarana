@@ -74,4 +74,12 @@ mixin footerNav(titleVal, arr)
             title=""
           )!= arr[idx].name
 
+
+mixin btn(classMod, text)
+  a.btn(
+    href="#" class= classMod title!= ""
+  )
+    span!= text
+    i.animated
+
 //- MIXIN :: END
