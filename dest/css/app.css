@@ -2153,6 +2153,9 @@ input[type="text"] {
   -o-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 
 
@@ -2232,6 +2235,9 @@ input[type="text"] {
   -o-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 
 
