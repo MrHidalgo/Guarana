@@ -1,0 +1,89 @@
+// BLOG BOX :: START
+
+-
+  var blogBoxData = [
+    {
+      imgName: 'img-bbox-0',
+      tag: 'Innovation',
+      title: 'The 5 mobile apps that epitomize enterprise innovation',
+      date: 'April 16, 2018',
+      text: 'Step onto any subway car, go into any café, and walk down any street.  One thing you’re guaranteed to witness is a smartphone being used. With all of us glued to our screens, going mobile is a crucial marketing strategy for any brand.  Furthermore, mobile apps can transform a static enterprise into one teeming with',
+    },
+    {
+      imgName: 'img-bbox-1',
+      tag: 'Retaintion',
+      title: 'Top strategies to drive engagement and retain app users',
+      date: 'March 19, 2018',
+      text: 'According to Statista, 2.8 million apps exist in the Google Play store and 2.2 million reside in the Apple App Store.  While leading app markets are saturated with innovative and practical digital solutions, TechCrunch estimates that people use just 9 apps daily and 30 apps monthly on average.  Furthermore, 24% of users will abandon an',
+    },
+    {
+      imgName: 'img-bbox-2',
+      tag: 'Fintech Companies',
+      title: 'Top 6 most impactful toronto fintech companies',
+      date: 'April 16, 2018',
+      text: 'Step onto any subway car, go into any café, and walk down any street.  One thing you’re guaranteed to witness is a smartphone being used. With all of us glued to our screens, going mobile is a crucial marketing strategy for any brand.  Furthermore, mobile apps can transform a static enterprise into one teeming with',
+    },
+    {
+      imgName: 'img-bbox-3',
+      tag: 'Development',
+      title: 'A thorough guide to your mobile app development process',
+      date: 'March 19, 2018',
+      text: 'According to Statista, 2.8 million apps exist in the Google Play store and 2.2 million reside in the Apple App Store.  While leading app markets are saturated with innovative and practical digital solutions, TechCrunch estimates that people use just 9 apps daily and 30 apps monthly on average.  Furthermore, 24% of users will abandon an',
+    },
+    {
+      imgName: 'img-bbox-0',
+      tag: 'Innovation',
+      title: 'The 5 mobile apps that epitomize enterprise innovation',
+      date: 'April 16, 2018',
+      text: 'Step onto any subway car, go into any café, and walk down any street.  One thing you’re guaranteed to witness is a smartphone being used. With all of us glued to our screens, going mobile is a crucial marketing strategy for any brand.  Furthermore, mobile apps can transform a static enterprise into one teeming with',
+    },
+    {
+      imgName: 'img-bbox-1',
+      tag: 'Retaintion',
+      title: 'Top strategies to drive engagement and retain app users',
+      date: 'March 19, 2018',
+      text: 'According to Statista, 2.8 million apps exist in the Google Play store and 2.2 million reside in the Apple App Store.  While leading app markets are saturated with innovative and practical digital solutions, TechCrunch estimates that people use just 9 apps daily and 30 apps monthly on average.  Furthermore, 24% of users will abandon an',
+    },
+    {
+      imgName: 'img-bbox-2',
+      tag: 'Fintech Companies',
+      title: 'Top 6 most impactful toronto fintech companies',
+      date: 'April 16, 2018',
+      text: 'Step onto any subway car, go into any café, and walk down any street.  One thing you’re guaranteed to witness is a smartphone being used. With all of us glued to our screens, going mobile is a crucial marketing strategy for any brand.  Furthermore, mobile apps can transform a static enterprise into one teeming with',
+    },
+    {
+      imgName: 'img-bbox-3',
+      tag: 'Development',
+      title: 'A thorough guide to your mobile app development process',
+      date: 'March 19, 2018',
+      text: 'According to Statista, 2.8 million apps exist in the Google Play store and 2.2 million reside in the Apple App Store.  While leading app markets are saturated with innovative and practical digital solutions, TechCrunch estimates that people use just 9 apps daily and 30 apps monthly on average.  Furthermore, 24% of users will abandon an'
+    }
+  ];
+
+section#bbox.bbox
+  .c-grid
+    .bbox__wrapper
+      each val, idx in blogBoxData
+        .bbox__block
+          .bbox__block-header
+            .bbox__block-img
+              img(
+                src="./img/" + blogBoxData[idx].imgName + ".jpg"
+                srcset="./img/" + blogBoxData[idx].imgName + "@2x.jpg 2x"
+                title=""
+                alt=""
+              )
+          .bbox__block-body
+            p.bbox__block-tag!= blogBoxData[idx].tag
+            p.bbox__block-title!= blogBoxData[idx].title
+            p.bbox__block-date!= blogBoxData[idx].date
+
+            hr.bbox__block-line
+
+            p.bbox__block-text!= blogBoxData[idx].text
+
+            a.bbox__block-link(href="#" title="" class="")!= "Read More"
+
+
+
+// BLOG BOX :: END
