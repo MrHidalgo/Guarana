@@ -518,7 +518,7 @@ input[type="text"] {
 .header--technology .nav__link.is-active,
 .header--concept .nav__link:hover,
 .header--concept .nav__link.is-active {
-  background-color: #f0f8ff;
+  background-color: #f9fafb;
   color: #181e22;
 }
 
@@ -1410,7 +1410,7 @@ input[type="text"] {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0;
-  border-top: 1px aliceblue;
+  border-top: 1px #f9fafb;
   background-color: transparent;
 }
 
@@ -2022,7 +2022,7 @@ input[type="text"] {
 
 
 .resources .main {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 
@@ -2067,7 +2067,7 @@ input[type="text"] {
 
 .rblock {
   padding-bottom: 56px;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 @media screen and (max-width: 767px) {
@@ -2265,7 +2265,7 @@ input[type="text"] {
 
 
 .rblock__box-link {
-  color: #00ACFF;
+  color: #00acff;
   font-size: 16px;
   font-family: "SF-Pro-Text", sans-serif;
 }

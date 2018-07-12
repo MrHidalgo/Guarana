@@ -3,7 +3,7 @@
 .connect {
   position: relative;
   min-height: 1024px;
-  background-color: #f9fafb;
+  background-color: $c-aliceBlue;
   @include respond(m_m) {
     padding-top: 40px;
     padding-bottom: 90px;

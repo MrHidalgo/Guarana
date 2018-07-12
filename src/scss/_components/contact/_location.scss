@@ -55,13 +55,13 @@
 
     &-phone {
       padding-bottom: 32px;
-      color: #607d8b;
+      color: $c-hoki;
     }
 
 
     &-link {
       display: inline-block;
-      color: #00acff;
+      color: $c-deepSkyBlue;
       @include transition(color);
 
       &:last-child {
@@ -89,7 +89,7 @@
 
     &-address {
       padding-bottom: 16px;
-      color: #b0bec5;
+      color: $c-heather;
     }
   }
 }

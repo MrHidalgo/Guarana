@@ -17,11 +17,12 @@ section#partner.partner
       ul.partner__list
         each val, idx in partner
           li.partner__item
-            img.partner__img(
-              src= partner[idx] + ".png"
-              srcset= partner[idx] + "@2x.png 2x"
-              title=""
-              alt=""
-            )
+            a(href="#" title="" class="")
+              img.partner__img(
+                src= partner[idx] + ".png"
+                srcset= partner[idx] + "@2x.png 2x"
+                title=""
+                alt=""
+              )
 
 // PARTNER :: END

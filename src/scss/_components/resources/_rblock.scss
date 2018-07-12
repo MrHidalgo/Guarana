@@ -2,7 +2,7 @@
 
 .rblock {
   padding-bottom: 56px;
-  background-color: #F9FAFB;
+  background-color: $c-aliceBlue;
   @include respond(m_m) {
     padding-bottom: 28px;
   }
@@ -129,7 +129,7 @@
 
 
     &-link {
-      color: #00ACFF;
+      color: $c-deepSkyBlue;
       font-size: 16px;
       font-family: "SF-Pro-Text", sans-serif;
       @include respond(m_m) {
