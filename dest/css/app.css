@@ -1112,6 +1112,11 @@ input[type="text"] {
 }
 
 
+.header--resources {
+  background-color: #F9FAFB;
+}
+
+
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2016,6 +2021,11 @@ input[type="text"] {
 }
 
 
+.resources .main {
+  background-color: #F9FAFB;
+}
+
+
 .resources .main__wrapper {
   min-height: 400px;
   text-align: center;
@@ -2051,6 +2061,158 @@ input[type="text"] {
 .resources .main__title {
   padding-top: 86px;
   padding-bottom: 34px;
+}
+
+
+.rblock {
+  padding-bottom: 56px;
+  background-color: #F9FAFB;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .rblock {
+    padding-bottom: 28px;
+  }
+}
+
+
+.rblock__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+
+.rblock__box {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: -webkit-calc((100% / 3) - 24px);
+  width: calc((100% / 3) - 24px);
+  min-height: 400px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.rblock__box:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
+.rblock__box-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+
+.rblock__box-wrap:before, .rblock__box-wrap:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.rblock__box-wrap:before {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+
+.rblock__box-wrap:after {
+  background-color: rgba(24, 30, 34, 0.2);
+}
+
+
+.rblock__box-wrap > div {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.rblock__box-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
+.rblock__box-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+
+.rblock__box-title {
+  padding-bottom: 32px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.rblock__box-link {
+  color: #00ACFF;
+  font-size: 16px;
+  font-family: "SF-Pro-Text", sans-serif;
 }
 
 
