@@ -18,13 +18,31 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    width: calc((100% / 3) - 24px);
-    min-height: 400px;
-    margin-left: 12px;
-    margin-right: 12px;
     margin-bottom: 24px;
     background-repeat: no-repeat;
     background-position: center;
+    @include respond(es) {
+      width: 100%;
+      min-height: 350px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include respond(s) {
+      width: calc((100% / 2) - 24px);
+      min-height: 300px;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    @include respond(m) {
+      width: calc((100% / 2) - 24px);
+    }
+    @include respond(l) {
+      width: calc((100% / 3) - 24px);
+      min-height: 330px;
+    }
+    @include respond(el) {
+      min-height: 400px;
+    }
 
 
     &:hover {
@@ -93,6 +111,9 @@
       color: rgba($c-white, 0.5);
       font-size: 18px;
       font-family: "SF-Pro-Text", sans-serif;
+      @include respond(m_m) {
+        font-size: 16px;
+      }
     }
 
 
@@ -101,6 +122,9 @@
       color: $c-white;
       font-size: 24px;
       font-weight: bold;
+      @include respond(m_m) {
+        font-size: 20px;
+      }
     }
 
 
@@ -108,6 +132,9 @@
       color: #00ACFF;
       font-size: 16px;
       font-family: "SF-Pro-Text", sans-serif;
+      @include respond(m_m) {
+        font-size: 14px;
+      }
     }
   }
 }
