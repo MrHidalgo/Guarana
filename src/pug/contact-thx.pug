@@ -1,0 +1,18 @@
+---
+title: Guarana - Contact
+favicon: favicon
+
+contentClassName: contact
+dataPageName: contact
+
+additionalStyleFile: false
+---
+extends shared/_layout
+
+block content
+  div(class!= contentClassName)
+
+    include ./components/contact/_main
+    include ./components/contact/_connect-thx
+    include ./components/contact/_location
+    include ./components/contact/_partner
