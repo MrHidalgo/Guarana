@@ -1,0 +1,59 @@
+// CONCEPT BLOCK :: START
+
+-
+  var conceptBoxData = [
+    {
+      classMod: '',
+      imgName: 'img-cblock-0',
+      title: 'Business and technology perfectly aligned',
+      text: 'We ensure every aspect of the mobile application is executed with excellence and is perfectly equipped to assist you meet your company & marketing goals. With your core business goals in mind, we\'ll be an active mentor that\'ll be there to assist you making the most of your digital product and using the best possible technology for your project.'
+    },
+    {
+      classMod: 'revert',
+      imgName: 'img-cblock-1',
+      title: 'Smooth experience & user-centric digital products',
+      text: 'We take our wireframing really seriously, and your future users will thank us for that. All mobile and web products are carefully mapped out so your customers experience the most seamless, efficient usability flow.'
+    },
+    {
+      classMod: '',
+      imgName: 'img-cblock-2',
+      title: 'Impeccable, scalable code you can rely on',
+      text: 'Our mobile app and web developers are highly skilled and keen to always find the best technologies available to build an efficient, scalable solution. Our code is build with your current and future goals in mind, so you\'ll know you can always count on your digital product to excel.'
+    }
+  ];
+
+
+mixin conceptBox(index, classMod, imgName, title, text)
+  .cblock__box(class!= (classMod) ? "cblock__box-" + index + " cblock__box--" + classMod: "cblock__box-" + index)
+    .cblock__box-left
+      img.cblock__box-img(
+        src="./img/" + imgName + ".jpg"
+        srcset="./img/" + imgName + "@2x.jpg 2x"
+        title=""
+        alt=""
+      )
+    .cblock__box-right
+      p.cblock__box-title!= title
+      p.cblock__box-text!= text
+
+
+section#cblock.cblock
+  .c-grid
+    .cblock__wrapper
+
+      .cblock__row.cblock__row-0
+        h1.cblock__title!= "At Guaraná, we commit to the perfect execution of your digital project."
+        p.cblock__text!= "From the creation of a new business to innovating how you reach and retain your customers, we have the all the complimentary know how you need to implement a successful mobile strategy. No matter what is your goal, we'll make sure you get there."
+
+      .cblock__row.cblock__row-1
+
+        each val, idx in conceptBoxData
+          +conceptBox(
+            idx,
+            conceptBoxData[idx].classMod,
+            conceptBoxData[idx].imgName,
+            conceptBoxData[idx].title,
+            conceptBoxData[idx].text
+          )
+
+// CONCEPT BLOCK :: END

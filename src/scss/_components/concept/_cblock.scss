@@ -1,0 +1,126 @@
+// CONCEPT BLOCK :: START
+
+.cblock {
+  &__wrapper {}
+
+
+  &__row {
+    &-0 {
+      width: 100%;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 104px;
+      padding-bottom: 140px;
+      text-align: center;
+      @include respond(m_m) {
+        padding-top: 52px;
+        padding-bottom: 70px;
+      }
+    }
+
+
+    &-1 {
+      padding-bottom: 65px;
+      @include respond(m_m) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+
+  &__title {
+    padding-bottom: 32px;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    color: $c-gunmetal;
+    @include respond(es) {
+      font-size: 35px;
+    }
+    @include respond(l) {
+      font-size: 40px;
+    }
+    @include respond(el) {
+      font-size: 48px;
+    }
+  }
+
+
+  &__text {
+    color: $c-bismark;
+    font-size: 22px;
+    font-family: "SF-Pro-Text", sans-serif;
+    @include respond(m_m) {
+      font-size: 18px;
+    }
+  }
+
+
+  &__box {
+    display: flex;
+    font-family: "SF-Pro-Text", sans-serif;
+
+
+    &--revert {
+      position: relative;
+      top: -75px;
+      flex-direction: row-reverse;
+    }
+    &-0 {
+      .cblock__box-right {
+        padding-top: 64px;
+      }
+    }
+    &-1 {
+      .cblock__box-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 215px;
+      }
+    }
+    &-2 {
+      position: relative;
+      top: -75px;
+      .cblock__box-right {
+        padding-top: 112px;
+      }
+    }
+
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+    &-left {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    &-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+
+    &-title,
+    &-text {
+      width: 100%;
+      max-width: 500px;
+    }
+    &-title {
+      padding-bottom: 24px;
+      color: $c-gunmetal;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &-text {
+      color: $c-bermudaGrey;
+      font-size: 16px;
+    }
+  }
+}
+
+// CONCEPT BLOCK :: END
