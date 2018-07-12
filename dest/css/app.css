@@ -733,6 +733,9 @@ input[type="text"] {
           animation-duration: 1.2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
@@ -2497,6 +2500,71 @@ input[type="text"] {
   -webkit-transition: background-color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
+}
+
+
+.startups {
+  background-color: #37474e;
+}
+
+
+.startups__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 424px;
+}
+
+
+.startups__title {
+  width: 100%;
+  max-width: 842px;
+  padding-bottom: 40px;
+  letter-spacing: .11px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.startups__btn {
+  color: #fff;
+  border-color: rgba(207, 216, 220, 0.3);
+}
+
+
+.startups__btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+
+.startups__btn:hover i {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+
+.startups__btn i {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 

@@ -1,0 +1,47 @@
+// STARTUPS :: START
+
+.startups {
+  background-color: $c-atomic;
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 424px;
+  }
+
+
+  &__title {
+    width: 100%;
+    max-width: 842px;
+    padding-bottom: 40px;
+    letter-spacing: .11px;
+    text-align: center;
+    color: $c-white;
+  }
+
+
+  &__btn {
+    color: $c-white;
+    border-color: rgba($c-pattensBlue, 0.3);
+
+    &:hover {
+      border-color: $c-white;
+      color: $c-white;
+
+      i {
+        opacity: 1;
+        @include transition(opacity);
+      }
+    }
+
+    i {
+      opacity: 0.3;
+      @include transition(opacity);
+    }
+  }
+}
+
+// STARTUPS :: END
