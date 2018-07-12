@@ -2582,13 +2582,21 @@ input[type="text"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  
+  .cblock__box {
+    margin-bottom: 30px;
+  }
 }
 
 
 .cblock__box--revert {
-  position: relative;
-  top: -75px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -2596,55 +2604,122 @@ input[type="text"] {
           flex-direction: row-reverse;
 }
 
-
-.cblock__box-0 .cblock__box-right {
-  padding-top: 64px;
+@media screen and (min-width: 992px) {
+  
+  .cblock__box--revert {
+    position: relative;
+    top: -75px;
+  }
 }
 
-
-.cblock__box-1 .cblock__box-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-top: 215px;
+@media screen and (min-width: 992px) {
+  
+  .cblock__box-0 .cblock__box-right {
+    padding-top: 64px;
+  }
 }
 
-
-.cblock__box-2 {
-  position: relative;
-  top: -75px;
+@media screen and (min-width: 768px) {
+  
+  .cblock__box-1 .cblock__box-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
+@media screen and (min-width: 992px) {
+  
+  .cblock__box-1 .cblock__box-right {
+    padding-top: 215px;
+  }
+}
 
-.cblock__box-2 .cblock__box-right {
-  padding-top: 112px;
+@media screen and (min-width: 992px) {
+  
+  .cblock__box-2 {
+    position: relative;
+    top: -75px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .cblock__box-2 .cblock__box-right {
+    padding-top: 112px;
+  }
 }
 
 
 .cblock__box-left, .cblock__box-right {
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .cblock__box-left, .cblock__box-right {
+    width: 50%;
+  }
 }
 
 
 .cblock__box-left {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .cblock__box-left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .cblock__box-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .cblock__box-right {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -2654,10 +2729,25 @@ input[type="text"] {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .cblock__box-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 .cblock__box-title, .cblock__box-text {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .cblock__box-title, .cblock__box-text {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 
