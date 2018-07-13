@@ -1,0 +1,126 @@
+// DETAILS :: START
+
+.details {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &__block {
+    overflow: hidden;
+    position: relative;
+    width: calc(50% - 8px);
+    height: 640px;
+
+    img {
+      position: absolute;
+    }
+    
+    &-0 {
+      margin-right: 4px;
+      margin-bottom: 8px;
+      background-color: $c-aliceBlueMedium;
+
+      p {
+        position: absolute;
+        &:nth-child(1) {
+          top: 106px;
+          right: 152px;
+          color: $c-bismark;
+          font-weight: bold;
+          font-family: "SF UI Display", sans-serif;
+        }
+        &:nth-child(2) {
+          top: 183px;
+          right: 317px;
+          color: $c-heather;
+          font-size: 30px;
+          font-family: "SF-Pro-Text", sans-serif;
+        }
+      }
+
+      img {
+        bottom: 74px;
+        right: 115px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &-1 {
+      margin-left: 4px;
+      margin-bottom: 8px;
+      background-color: $c-aliceBlue;
+      background-image: url("../img/img-bg-1__details.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+
+      p {
+        position: absolute;
+        left: 312px;
+        top: 90px;
+        color: $c-white;
+        text-align: right;
+      }
+    }
+    &-2 {
+      margin-right: 4px;
+      background-color: $c-blackPearl;
+
+      p {
+        position: absolute;
+        right: 354px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $c-deepSkyBlue;
+      }
+
+      img {
+        right: 54px;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+    &-3 {
+      margin-left: 4px;
+      background-color: $c-deepSkyBlue;
+
+      p {
+        margin-top: 67px;
+        text-align: center;
+        color: $c-white;
+        font-weight: bold;
+        font-family: "SF UI Display", sans-serif;
+        @include respond(es) {
+          font-size: 35px;
+        }
+        @include respond(l) {
+          font-size: 40px;
+        }
+        @include respond(el) {
+          font-size: 44px;
+        }
+        @include respond(w-min) {
+          font-size: 50px;
+        }
+      }
+
+      img {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+// DETAILS :: END
