@@ -85,7 +85,7 @@
     @include respond(el) {
       font-size: 44px;
     }
-    @include respond(w_min) {
+    @include respond(w-min) {
       font-size: 48px;
     }
   }

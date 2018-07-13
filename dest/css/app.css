@@ -600,6 +600,13 @@ input[type="text"] {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  
+  .title--wide {
+    font-size: 48px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   
   .title--large {
