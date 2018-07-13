@@ -54,6 +54,9 @@
       font-size: 18px;
       font-family: "SF-Pro-Text", sans-serif;
       @include transition(color, background-color);
+      @include respond(m_s) {
+        font-size: 16px;
+      }
 
       &:hover {
         color: $c-white;
