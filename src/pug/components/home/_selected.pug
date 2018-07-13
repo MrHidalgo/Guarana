@@ -1,7 +1,56 @@
 // SELECTED PROJECT :: START
 
+-
+  var selectedBoxData = [
+    {
+      imgName: 'img-selected-0',
+      title: 'Waste Wizard',
+      text: 'Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque se.'
+    },
+    {
+      imgName: 'img-selected-1',
+      title: 'Fan Metrix',
+      text: 'Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam.'
+    },
+    {
+      imgName: 'img-selected-2',
+      title: 'Uto',
+      text: 'Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue en.'
+    }
+  ];
+
+
+mixin selectedBox(idx, imgName, title, text)
+  .selected__box(class!="selected__box-" + idx)
+    .selected__box-img
+      img(
+        src="./img/" + imgName + ".png"
+        srcset="./img/" + imgName + "@2x.png 2x"
+        title=""
+        alt=""
+      )
+    p.selected__box-title!= title
+    hr.selected__box-line
+    p.selected__box-text!= text
+
+
 section#selected.selected
   .c-grid
     .selected__wrapper
+
+      h1.selected__title.title.title--wide!= "Selected projects"
+
+      .selected__row
+        each val, idx in selectedBoxData
+          +selectedBox(
+            idx,
+            selectedBoxData[idx].imgName,
+            selectedBoxData[idx].title,
+            selectedBoxData[idx].text
+          )
+
+
+      .selected__btn-wrap
+        +btn("selected__btn", "View our full portfolio")
 
 // SELECTED PROJECT :: END

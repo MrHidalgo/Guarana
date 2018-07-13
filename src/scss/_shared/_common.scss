@@ -75,6 +75,20 @@
       font-size: 40px;
     }
   }
+  &--wide {
+    @include respond(es) {
+      font-size: 35px;
+    }
+    @include respond(l) {
+      font-size: 40px;
+    }
+    @include respond(el) {
+      font-size: 44px;
+    }
+    @include respond(w_min) {
+      font-size: 48px;
+    }
+  }
   &--large {
     @include respond(es) {
       font-size: 38px;
