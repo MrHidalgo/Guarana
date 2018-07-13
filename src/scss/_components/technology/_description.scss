@@ -1,0 +1,40 @@
+// DESCRIPTION :: START
+
+.description {
+  background-color: $c-aliceBlue;
+
+
+  &__wrapper {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    @include respond(m_m) {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+  }
+
+
+  &__title {
+    padding-bottom: 32px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: $c-gunmetal;
+  }
+
+
+  &__text {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: $c-bismark;
+    font-size: 22px;
+    font-family: "SF-Pro-Text", sans-serif;
+    @include respond(m_m) {
+      font-size: 18px;
+    }
+  }
+}
+
+// DESCRIPTION :: END

@@ -82,4 +82,11 @@ mixin btn(classMod, text)
     span!= text
     i.animated
 
+
+mixin descriptionText(title, text)
+  .description__row
+    h2.description__title.title.title--wide!= title
+    p.description__text!= text
+
+
 //- MIXIN :: END

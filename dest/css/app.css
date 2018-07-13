@@ -3807,6 +3807,52 @@ input[type="text"] {
 }
 
 
+.description {
+  background-color: #f9fafb;
+}
+
+
+.description__wrapper {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .description__wrapper {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
+
+
+.description__title {
+  padding-bottom: 32px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #273238;
+}
+
+
+.description__text {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #546e7a;
+  font-size: 22px;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .description__text {
+    font-size: 18px;
+  }
+}
+
+
 .cblock__row-0 {
   width: 100%;
   max-width: 1000px;
@@ -4191,6 +4237,7 @@ input[type="text"] {
 .technology .main__title,
 .concept .main__title {
   color: #fff;
+  padding-bottom: 32px;
 }
 
 
