@@ -11,15 +11,49 @@
     &-left,
     &-right {
       width: 50%;
-      padding-top: 120px;
-      padding-bottom: 120px;
+      @include respond(m_m) {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      @include respond(m) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @include respond(l) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+      }
+      @include respond(el) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
     }
     &-left {
-      padding-right: 120px;
-      border-right: 1px solid $c-bismark;
+      @include respond(m_m) {
+        border-bottom: 1px solid $c-bismark;
+      }
+      @include respond(m) {
+        padding-right: 60px;
+        border-right: 1px solid $c-bismark;
+      }
+      @include respond(l) {
+        padding-right: 90px;
+      }
+      @include respond(el) {
+        padding-right: 120px;
+      }
     }
     &-right {
-      padding-left: 120px;
+      @include respond(m) {
+        padding-left: 60px;
+      }
+      @include respond(l) {
+        padding-left: 90px;
+      }
+      @include respond(el) {
+        padding-left: 120px;
+      }
     }
   }
 
@@ -35,6 +69,9 @@
     max-width: 454px;
     color: $c-heather;
     font-size: 22px;
+    @include respond(m_m) {
+      font-size: 20px;
+    }
   }
 }
 
