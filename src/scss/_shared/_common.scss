@@ -186,11 +186,24 @@
     min-height: 69px;
     margin-bottom: 24px;
 
+    &--m {
+      margin-bottom: 34px;
+    }
+
     &-group {
       display: flex;
+      @include respond(m_m) {
+        flex-wrap: wrap;
+      }
 
       .form__field {
         width: 50%;
+        @include respond(m_m) {
+          width: 100%;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
         &:nth-child(1) {
           margin-right: 8px;
         }
@@ -206,12 +219,12 @@
       .form__label {
         font-size: 16px;
         font-weight: 600;
-        transform: translateY(-85px);
+        transform: translateY(-95px);
       }
 
       &.is-focus {
         .form__label {
-          transform: translateY(-85px);
+          transform: translateY(-95px);
         }
       }
     }
