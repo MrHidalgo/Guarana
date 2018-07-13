@@ -95,6 +95,13 @@
       padding-right: 0;
     }
 
+    &:hover {
+      img {
+        transform: translateY(-15px);
+        @include transition(transform);
+      }
+    }
+
     &-img {
       margin-bottom: 13px;
 
@@ -103,6 +110,7 @@
         max-width: 100%;
         margin-left: -40px;
         height: auto;
+        @include transition(transform);
         @include respond(m_m) {
           margin-left: auto;
           margin-right: auto;

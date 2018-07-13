@@ -1887,6 +1887,7 @@ input[type="text"] {
 
 
 .selected__box {
+  cursor: pointer;
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3);
   padding-left: 15px;
@@ -1905,6 +1906,18 @@ input[type="text"] {
 }
 
 
+.selected__box:hover img {
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
 .selected__box-img {
   margin-bottom: 13px;
 }
@@ -1915,6 +1928,11 @@ input[type="text"] {
   max-width: 100%;
   margin-left: -40px;
   height: auto;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -2440,6 +2458,18 @@ input[type="text"] {
 }
 
 
+.category__box:hover img {
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
 .category__box-img {
   margin-bottom: 13px;
 }
@@ -2450,6 +2480,11 @@ input[type="text"] {
   max-width: 100%;
   margin-left: -40px;
   height: auto;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
