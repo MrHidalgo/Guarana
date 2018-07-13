@@ -1,0 +1,120 @@
+// SPECIFICATION :: START
+
+-
+  var specificationData0 = [
+    {
+      title: 'Email Login',
+      text: 'Systems to manage user sign-ups, sign-ins, forgotten passwords and existing accounts.'
+    },
+    {
+      title: 'Facebook Login',
+      text: 'Facebook SDK integration to streamline account creation. Also picture, age, interests and so on.'
+    },
+    {
+      title: 'Twitter Login',
+      text: 'Easy way for users to create an account without having to share personal information. One-click connection.'
+    },
+    {
+      title: 'Phone Number Login',
+      text: 'User signup via phone number with SMS verification. Fast and reliable for transaction-based apps.'
+    },
+    {
+      title: 'Google Login',
+      text: 'Quick connection via user’s Google account. Leverage on Google APIs and tools.'
+    },
+    {
+      title: 'User Exit',
+      text: 'Account logout and account deletion by user. Secure data management.'
+    },
+  ];
+  var specificationData1 = [
+    {
+      title: 'Chat',
+      text: 'Chat between users, one-to-one or one-to-many. Associated push notifications and instant refresh.'
+    },
+    {
+      title: 'Push Notifications',
+      text: 'User-targeted push notifications associated with specific app events and user actions.'
+    },
+    {
+      title: 'In-app purchase',
+      text: 'Premium model. Enables users to unlock specific features with one-time in-app or monthly subscription model.'
+    },
+    {
+      title: 'Tutorials',
+      text: 'Simple application slide system to educate users on the application’s core features.'
+    },
+    {
+      title: 'Content Feed',
+      text: 'Access to a content feed, together with the ability to share it inside and outside the app.'
+    },
+  ];
+  var specificationData2 = [
+    {
+      title: 'Geo-restriction',
+      text: 'Allows app usage to be restricted to only those users in a specific location. Radius and polygon methods define the target area.'
+    },
+    {
+      title: 'Geofencing',
+      text: 'Continuous detection of user location, with triggers for notifications and selected app behavior in specified vicinity.'
+    },
+    {
+      title: 'Map Display',
+      text: 'Pin management on map and clustering of points for high content volume.'
+    },
+    {
+      title: 'Google Places API',
+      text: 'Instant, automatic address input (like Uber), allowing users to rapidly find a specific location.'
+    },
+    {
+      title: 'Directions',
+      text: 'Bring users to map at a specific location and/or initiate turn-by-turn directions from the app.'
+    },
+  ];
+
+
+mixin specificationBlock(idx, title, text)
+  .specification__block-wrap
+    .specification__block(class!= "specification__block-" + idx)
+      p.specification__block-title!= title
+      hr.specification__block-line
+      p.specification__block-text!= text
+
+
+section#specification.specification
+  .c-grid
+
+    .specification__wrapper.specification__wrapper-0
+      h3.specification__title.title.title--wide!= "User Account"
+
+      .specification__row
+        each val, idx in specificationData0
+          +specificationBlock(
+            idx,
+          specificationData0[idx].title,
+          specificationData0[idx].text
+          )
+
+    .specification__wrapper.specification__wrapper-1
+      h3.specification__title.title.title--wide!= "Features"
+
+      .specification__row
+        each val, idx in specificationData1
+          +specificationBlock(
+            idx,
+            specificationData1[idx].title,
+            specificationData1[idx].text
+          )
+
+    .specification__wrapper.specification__wrapper-2
+      h3.specification__title.title.title--wide!= "Location"
+
+      .specification__row
+        each val, idx in specificationData2
+          +specificationBlock(
+            idx,
+            specificationData2[idx].title,
+            specificationData2[idx].text
+          )
+
+// SPECIFICATION :: END

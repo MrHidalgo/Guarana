@@ -6,6 +6,10 @@
 
   &--2 {
     background-color: $c-white;
+
+    .description__wrapper {
+      padding-bottom: 0;
+    }
   }
 
 
