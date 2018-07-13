@@ -52,7 +52,8 @@ $(document).ready((ev) => {
 
 
   /**
-   *
+   * @param btnName
+   * @description Anchor smooth scroll
    */
   function smoothScroll(btnName) {
     $(btnName).on("click", function (e) {
