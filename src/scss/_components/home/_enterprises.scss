@@ -1,0 +1,41 @@
+// ENTERPRISES :: START
+
+.enterprises {
+  background-color: $c-atomic;
+
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-left,
+    &-right {
+      width: 50%;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    &-left {
+      padding-right: 120px;
+      border-right: 1px solid $c-bismark;
+    }
+    &-right {
+      padding-left: 120px;
+    }
+  }
+
+
+  &__title {
+    padding-bottom: 39px;
+    color: $c-white;
+  }
+
+
+  &__text {
+    width: 100%;
+    max-width: 454px;
+    color: $c-heather;
+    font-size: 22px;
+  }
+}
+
+// ENTERPRISES :: END

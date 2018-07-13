@@ -1997,6 +1997,54 @@ input[type="text"] {
 }
 
 
+.enterprises {
+  background-color: #37474e;
+}
+
+
+.enterprises__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+
+.enterprises__wrapper-left, .enterprises__wrapper-right {
+  width: 50%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.enterprises__wrapper-left {
+  padding-right: 120px;
+  border-right: 1px solid #546e7a;
+}
+
+
+.enterprises__wrapper-right {
+  padding-left: 120px;
+}
+
+
+.enterprises__title {
+  padding-bottom: 39px;
+  color: #fff;
+}
+
+
+.enterprises__text {
+  width: 100%;
+  max-width: 454px;
+  color: #b0bec5;
+  font-size: 22px;
+}
+
+
 .portfolio .main {
   position: relative;
   background-color: #181e22;
