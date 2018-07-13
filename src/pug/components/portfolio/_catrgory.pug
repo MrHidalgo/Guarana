@@ -1,0 +1,49 @@
+// CATEGORY :: START
+
+-
+  var categoryFilterBtn = [
+    {
+      attr: 'ios',
+      name: 'iOS'
+    },
+    {
+      attr: 'android',
+      name: 'Android'
+    },
+    {
+      attr: 'webapp',
+      name: 'Web App'
+    },
+    {
+      attr: 'iot',
+      name: 'IoT & Connected Objects'
+    },
+    {
+      attr: 'bluetooh',
+      name: 'Beacon & Bluetooh'
+    },
+    {
+      attr: 'studies',
+      name: 'Case Studies'
+    }
+  ];
+
+section#category.category
+  .category__row.category__row-0
+    .c-grid
+      .category__wrapper
+        h2.category__title!= "Browser per categories"
+
+        .category__filter
+          each val, idx in categoryFilterBtn
+            a.category__filter-btn(
+              href="#" title="" class=""
+              data-filterBtn!= categoryFilterBtn[idx].attr
+              category-filterBtn-js
+            )!= categoryFilterBtn[idx].name
+
+  .category__row.category__row-1
+    .c-grid
+      .category__wrapper
+
+// CATEGORY :: END

@@ -23,6 +23,7 @@ $(document).ready((ev) => {
    */
   function initJquery() {
     inputLabelFormAnimated();
+    categoryPortfolioFilter();
   }
   initJquery();
 
@@ -32,11 +33,13 @@ $(document).ready((ev) => {
    */
   function inputLabelFormAnimated() {
     const inputElem = $("[input-js]");
+
     inputElem.on("focus", (e) => {
       let curElem = $(e.target);
 
       curElem.closest(".form__field").addClass("is-focus");
     });
+
     inputElem.on("blur", (e) => {
       let curElem = $(e.target),
         curElemVal = curElem.val().trim();
@@ -44,6 +47,19 @@ $(document).ready((ev) => {
       if(curElemVal === "") {
         curElem.closest(".form__field").removeClass("is-focus");
       }
+    });
+  }
+
+
+  /**
+   *
+   */
+  function categoryPortfolioFilter() {
+    $("[category-filterBtn-js]").on("click", (e) => {
+      const elem = $(e.currentTarget),
+        elemAttr = elem.attr("data-filterBtn");
+
+      // console.log(`elemAttr: ${elemAttr}`);
     });
   }
 });

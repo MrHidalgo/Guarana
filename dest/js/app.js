@@ -85,6 +85,7 @@ $(document).ready(function (ev) {
    */
   function initJquery() {
     inputLabelFormAnimated();
+    categoryPortfolioFilter();
   }
   initJquery();
 
@@ -93,11 +94,13 @@ $(document).ready(function (ev) {
    */
   function inputLabelFormAnimated() {
     var inputElem = $("[input-js]");
+
     inputElem.on("focus", function (e) {
       var curElem = $(e.target);
 
       curElem.closest(".form__field").addClass("is-focus");
     });
+
     inputElem.on("blur", function (e) {
       var curElem = $(e.target),
           curElemVal = curElem.val().trim();
@@ -105,6 +108,18 @@ $(document).ready(function (ev) {
       if (curElemVal === "") {
         curElem.closest(".form__field").removeClass("is-focus");
       }
+    });
+  }
+
+  /**
+   *
+   */
+  function categoryPortfolioFilter() {
+    $("[category-filterBtn-js]").on("click", function (e) {
+      var elem = $(e.currentTarget),
+          elemAttr = elem.attr("data-filterBtn");
+
+      // console.log(`elemAttr: ${elemAttr}`);
     });
   }
 });
