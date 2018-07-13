@@ -1,8 +1,7 @@
 // DETAILS :: START
 
 .details {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px;
 
 
   &__wrapper {
@@ -14,11 +13,26 @@
   &__block {
     overflow: hidden;
     position: relative;
-    width: calc(50% - 8px);
+    width: calc(50% - 4px);
     height: 640px;
+    @include respond(m_m) {
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: 0 !important;
+    }
 
     img {
       position: absolute;
+      max-width: 100%;
+      height: auto;
+      @include respond(m_m) {
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     
     &-0 {
@@ -28,27 +42,50 @@
 
       p {
         position: absolute;
+        width: 100%;
+        max-width: 471px;
+        @include respond(m_el) {
+          position: static;
+          padding-left: 15px;
+        }
+        @include respond(el) {
+          left: 15px;
+        }
+        @include respond(w-min) {
+          left: auto;
+          right: 152px;
+        }
         &:nth-child(1) {
           top: 106px;
-          right: 152px;
           color: $c-bismark;
           font-weight: bold;
           font-family: "SF UI Display", sans-serif;
+          @include respond(m_el) {
+            padding-top: 60px;
+          }
+          @include respond(m_m) {
+            padding-top: 30px;
+            padding-right: 15px;
+          }
         }
         &:nth-child(2) {
           top: 183px;
-          right: 317px;
           color: $c-heather;
           font-size: 30px;
           font-family: "SF-Pro-Text", sans-serif;
+          @include respond(m_m) {
+            padding-bottom: 30px;
+            font-size: 25px;
+          }
+          @include respond(m_s) {
+            font-size: 22px;
+          }
         }
       }
 
       img {
         bottom: 74px;
         right: 115px;
-        max-width: 100%;
-        height: auto;
       }
     }
     &-1 {
@@ -59,6 +96,9 @@
       background-repeat: no-repeat;
       background-position: right;
       background-size: cover;
+      @include respond(m_el) {
+        background-position: center;
+      }
 
       p {
         position: absolute;
@@ -66,6 +106,14 @@
         top: 90px;
         color: $c-white;
         text-align: right;
+        @include respond(m_el) {
+          position: static;
+          padding-right: 15px;
+          padding-top: 60px;
+        }
+        @include respond(m_m) {
+          padding-bottom: 60px;
+        }
       }
     }
     &-2 {
@@ -78,6 +126,16 @@
         top: 50%;
         transform: translateY(-50%);
         color: $c-deepSkyBlue;
+        @include respond(m_el) {
+          position: static;
+          padding-top: 67px;
+          transform: translateY(0);
+          text-align: center;
+        }
+        @include respond(m_m) {
+          padding-top: 0;
+          padding-bottom: 30px;
+        }
       }
 
       img {
@@ -98,6 +156,10 @@
         color: $c-white;
         font-weight: bold;
         font-family: "SF UI Display", sans-serif;
+        @include respond(m_m) {
+          margin-top: 0;
+          padding-bottom: 30px;
+        }
         @include respond(es) {
           font-size: 35px;
         }
