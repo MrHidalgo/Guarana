@@ -772,6 +772,194 @@ input[type="text"] {
 }
 
 
+.form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form__field {
+  position: relative;
+  min-height: 69px;
+  margin-bottom: 24px;
+}
+
+
+.form__field-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.form__field-group .form__field {
+  width: 50%;
+}
+
+
+.form__field-group .form__field:nth-child(1) {
+  margin-right: 8px;
+}
+
+
+.form__field-group .form__field:nth-child(2) {
+  margin-left: 8px;
+}
+
+
+.form__field-textarea {
+  min-height: 175px;
+}
+
+
+.form__field-textarea .form__label {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transform: translateY(-85px);
+      -ms-transform: translateY(-85px);
+          transform: translateY(-85px);
+}
+
+
+.form__field-textarea.is-focus .form__label {
+  -webkit-transform: translateY(-85px);
+      -ms-transform: translateY(-85px);
+          transform: translateY(-85px);
+}
+
+
+.form__input, .form__textarea {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #273238;
+  font-size: 22px;
+  font-family: "SF-Pro-Display", sans-serif;
+}
+
+
+.form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+  color: #b0bec5;
+}
+
+
+.form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
+  color: #b0bec5;
+}
+
+
+.form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+  color: #b0bec5;
+}
+
+
+.form__input:-moz-placeholder, .form__textarea:-moz-placeholder {
+  color: #b0bec5;
+}
+
+
+.form__textarea {
+  resize: none;
+  padding-top: 15px;
+  line-height: 1.4;
+}
+
+
+.form__label {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  color: #607d8b;
+  font-size: 22px;
+  -webkit-transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
+.is-focus .form__label {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+
+.form__line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eceff1;
+}
+
+
+.form__line:before, .form__line:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  -webkit-transition: width 0.25s ease-in-out;
+  -o-transition: width 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out;
+}
+
+
+.is-focus .form__line:before, .is-focus .form__line:after {
+  width: 50%;
+  background-color: #607d8b;
+  -webkit-transition: width 0.25s ease-in-out;
+  -o-transition: width 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out;
+}
+
+
+.form__line:before {
+  left: 50%;
+}
+
+
+.form__line:after {
+  right: 50%;
+}
+
+
 .c-grid, .c-grid-fluid {
   width: 100%;
   padding-right: 15px;

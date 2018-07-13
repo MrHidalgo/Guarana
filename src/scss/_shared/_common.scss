@@ -173,4 +173,142 @@
     transform: translate3d(50px, 0, 0);
   }
 }
+
+
+.form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  &__field {
+    position: relative;
+    min-height: 69px;
+    margin-bottom: 24px;
+
+    &-group {
+      display: flex;
+
+      .form__field {
+        width: 50%;
+        &:nth-child(1) {
+          margin-right: 8px;
+        }
+        &:nth-child(2) {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &-textarea {
+      min-height: 175px;
+
+      .form__label {
+        font-size: 16px;
+        font-weight: 600;
+        transform: translateY(-85px);
+      }
+
+      &.is-focus {
+        .form__label {
+          transform: translateY(-85px);
+        }
+      }
+    }
+  }
+
+
+  &__input,
+  &__textarea {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $c-gunmetal;
+    font-size: 22px;
+    font-family: "SF-Pro-Display", sans-serif;
+
+    &::-webkit-input-placeholder {
+      color: $c-heather;
+    }
+    &::-moz-placeholder {
+      color: $c-heather;
+    }
+    &:-ms-input-placeholder {
+      color: $c-heather;
+    }
+    &:-moz-placeholder {
+      color: $c-heather;
+    }
+  }
+  &__textarea {
+    resize: none;
+    padding-top: 15px;
+    line-height: 1.4;
+  }
+
+
+  &__label {
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    color: $c-hoki;
+    font-size: 22px;
+    @include transition(color, font-size, transform);
+
+    .is-focus & {
+      //color: $c-deepSkyBlue;
+      font-size: 16px;
+      font-weight: 600;
+      transform: translateY(-30px);
+      @include transition(color, font-size, transform);
+    }
+  }
+
+
+  &__line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $c-aliceBlueDark;
+
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      @include transition(width);
+
+      .is-focus & {
+        width: 50%;
+        //background-color: $c-deepSkyBlue;
+        background-color: $c-hoki;
+        @include transition(width);
+      }
+    }
+    &:before {
+      left: 50%;
+    }
+    &:after {
+      right: 50%;
+    }
+  }
+}
 // COMMON :: END

@@ -23,11 +23,11 @@
   /**
    * @description Init all method
    */
-  function init() {
+  function initNative() {
     preventBehavior();
     initHamburgerMenu();
   }
-  init();
+  initNative();
 
 
   /**

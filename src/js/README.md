@@ -9,11 +9,10 @@
 ### Standard
 1. Ignore files which start `[_]*.js`
 2. In the folders of the `_document` and the `_window` there are two files:
-  - `_indexJquery.js` & `indexNative.js` (depending on what you use for the project, you need to uncomment it);
+  - `indexJquery.js` & `indexNative.js` (depending on what you use for the project, you need to uncomment it);
   - The default is `indexNative.js`
 
 ### Present methods
-* `svg4everybody()`
 * `svg4everybody()`
 * `barbaJSTransition()`
 * `viewPortChecker()` - it is better to use with `animate.css`:

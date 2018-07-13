@@ -67,6 +67,51 @@ function initSwiper() {
 /**
  * @description Document DOM ready.
  */
+$(document).ready(function (ev) {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  var _document = $(document),
+      _window = $(window);
+
+  /**
+   * @description Method call for execution
+   */
+
+  /**
+   * @description Init all method
+   */
+  function initJquery() {
+    inputLabelFormAnimated();
+  }
+  initJquery();
+
+  /**
+   *
+   */
+  function inputLabelFormAnimated() {
+    var inputElem = $("[input-js]");
+    inputElem.on("focus", function (e) {
+      var curElem = $(e.target);
+
+      curElem.closest(".form__field").addClass("is-focus");
+    });
+    inputElem.on("blur", function (e) {
+      var curElem = $(e.target),
+          curElemVal = curElem.val().trim();
+
+      if (curElemVal === "") {
+        curElem.closest(".form__field").removeClass("is-focus");
+      }
+    });
+  }
+});
+
+/**
+ * @description Document DOM ready.
+ */
 (function () {
   /**
    *
@@ -85,11 +130,11 @@ function initSwiper() {
   /**
    * @description Init all method
    */
-  function init() {
+  function initNative() {
     preventBehavior();
     initHamburgerMenu();
   }
-  init();
+  initNative();
 
   /**
    * @description Hamburger menu

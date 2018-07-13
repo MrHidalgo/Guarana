@@ -2,5 +2,6 @@
 *
 * Include... :
 * - swiper.js;
+* - jquery;
 *
 * */
