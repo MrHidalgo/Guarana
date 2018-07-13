@@ -23,7 +23,7 @@ $(document).ready((ev) => {
    */
   function initJquery() {
     inputLabelFormAnimated();
-    categoryPortfolioFilter();
+    smoothScroll("[portfolioSmooth-btn-js]");
   }
   initJquery();
 
@@ -54,12 +54,17 @@ $(document).ready((ev) => {
   /**
    *
    */
-  function categoryPortfolioFilter() {
-    $("[category-filterBtn-js]").on("click", (e) => {
-      const elem = $(e.currentTarget),
-        elemAttr = elem.attr("data-filterBtn");
+  function smoothScroll(btnName) {
+    $(btnName).on("click", function (e) {
+      e.preventDefault();
 
-      // console.log(`elemAttr: ${elemAttr}`);
+      const id = $(this).attr('href'),
+        navHeight = $(".header").outerHeight(),
+        topHeightOffset = $(id).offset().top - navHeight;
+
+      $('body, html').animate({
+        scrollTop: topHeightOffset
+      }, 750);
     });
   }
 });
