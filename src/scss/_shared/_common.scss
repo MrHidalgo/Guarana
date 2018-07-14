@@ -23,9 +23,6 @@
   &.header {
     background-color: $c-blackPearl;
   }
-  &.header {
-    background-color: #39357a;
-  }
 
   .hamburger-inner {
     &,
@@ -44,6 +41,44 @@
     &.is-active {
       background-color: $c-aliceBlue;
       color: $c-blackPearl;
+    }
+  }
+}
+
+.header--portfolioSingle {
+  svg {
+    polyline,
+    path {
+      fill: $c-white;
+    }
+    path {
+      &:last-child {
+        stroke: $c-white;
+      }
+    }
+  }
+
+  &.header {
+    background-color: #39357a;
+  }
+
+  .hamburger-inner {
+    &,
+    &::before,
+    &::after {
+      background-color: $c-white;
+    }
+  }
+
+  .nav__desktop.is-show {
+    background-color: #39357a;
+  }
+
+  .nav__link {
+    &:hover,
+    &.is-active {
+      background-color: $c-aliceBlue;
+      color: #39357a;
     }
   }
 }

@@ -10,13 +10,40 @@
       z-index: 0;
       overflow: hidden;
       position: absolute;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+
+      &-left,
+      &-right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+      &-left {
+        left: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        width: 70%;
+        @include respond(m_l) {
+          width: 85%;
+        }
+        @include respond(m_m) {
+          width: 100%;
+        }
+      }
+      &-right {
+        right: 0;
+        width: 30%;
+        @include respond(m_l) {
+          width: 15%;
+        }
+        @include respond(m_m) {
+          display: none;
+        }
+      }
     }
 
 
@@ -34,6 +61,10 @@
       min-height: 800px;
       @include respond(m_m) {
         flex-wrap: wrap;
+        min-height: 750px;
+      }
+      @include respond(m_s) {
+        min-height: 600px;
       }
 
       &-left,
@@ -44,9 +75,33 @@
       }
       &-left {
         width: 70%;
+        @include respond(m_m) {
+          display: none;
+        }
+        @include respond(m) {
+          width: 50%;
+        }
+        @include respond(l) {
+          width: 60%;
+        }
+        @include respond(w-min) {
+          width: 70%;
+        }
       }
       &-right {
         width: 30%;
+        @include respond(m_m) {
+          width: 100%;
+        }
+        @include respond(m) {
+          width: 50%;
+        }
+        @include respond(l) {
+          width: 40%;
+        }
+        @include respond(w-min) {
+          width: 30%;
+        }
       }
     }
 
@@ -56,6 +111,18 @@
       line-height: 1;
       color: $c-white;
       font-size: 120px;
+      @include respond(m_l) {
+        padding-top: 139px;
+        font-size: 100px;
+      }
+      @include respond(m_m) {
+        padding-top: 99px;
+        font-size: 80px;
+      }
+      @include respond(m_s) {
+        font-size: 60px;
+        padding-bottom: 16px;
+      }
     }
 
 
@@ -65,6 +132,10 @@
       color: rgba($c-white, 0.5);
       font-size: 22px;
       font-family: "SF-Pro-Text", sans-serif;
+      @include respond(m_m) {
+        font-size: 18px;
+        padding-left: 0;
+      }
     }
 
 
@@ -94,6 +165,9 @@
         display: flex;
         align-items: center;
         padding-left: 15px;
+        @include respond(m_s) {
+          padding-left: 0;
+        }
       }
     }
   }
