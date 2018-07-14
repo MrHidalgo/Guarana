@@ -3111,6 +3111,78 @@ input[type="text"] {
 }
 
 
+.ins {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .ins {
+    padding-top: 40px;
+  }
+}
+
+
+.ins__wrapper {
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .ins__wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+
+.ins__title {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+
+.ins__text {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+  text-align: center;
+  color: #546e7a;
+  font-size: 22px;
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .ins__text {
+    padding-top: 40px;
+    font-size: 18px;
+  }
+}
+
+
+.ins__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.ins__btn-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
 .connect {
   position: relative;
   min-height: 1024px;
