@@ -97,7 +97,7 @@
 
     &:hover {
       img {
-        transform: translateY(-15px);
+        transform: translate(-32px, -15px);
         @include transition(transform);
       }
     }

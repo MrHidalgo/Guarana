@@ -364,7 +364,6 @@
 
       .is-focus & {
         width: 50%;
-        //background-color: $c-deepSkyBlue;
         background-color: $c-hoki;
         @include transition(width);
       }
@@ -375,6 +374,13 @@
     &:after {
       right: 50%;
     }
+  }
+}
+
+
+[translateImage-css] {
+  @include respond(m_m) {
+    transform: translateX(-32px);
   }
 }
 // COMMON :: END

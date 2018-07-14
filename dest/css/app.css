@@ -1052,6 +1052,15 @@ input[type="text"] {
   right: 50%;
 }
 
+@media screen and (max-width: 767px) {
+  
+  [translateImage-css] {
+    -webkit-transform: translateX(-32px);
+        -ms-transform: translateX(-32px);
+            transform: translateX(-32px);
+  }
+}
+
 
 .c-grid, .c-grid-fluid {
   width: 100%;
@@ -1949,9 +1958,9 @@ input[type="text"] {
 
 
 .selected__box:hover img {
-  -webkit-transform: translateY(-15px);
-      -ms-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translate(-32px, -15px);
+      -ms-transform: translate(-32px, -15px);
+          transform: translate(-32px, -15px);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
@@ -2865,9 +2874,9 @@ input[type="text"] {
 
 
 .category__box:hover img {
-  -webkit-transform: translateY(-15px);
-      -ms-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translate(-32px, -15px);
+      -ms-transform: translate(-32px, -15px);
+          transform: translate(-32px, -15px);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
