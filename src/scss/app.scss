@@ -43,7 +43,6 @@
 @import "_components/home/main";
 @import "_components/home/solve";
 @import "_components/home/selected";
-@import "_components/home/details";
 @import "_components/home/enterprises";
 @import "_components/home/map";
 ///
@@ -89,6 +88,7 @@
 /// COMMON
 /// ===============
 @import "_components/common/main";
+@import "_components/common/details";
 @import "_components/common/values";
 @import "_components/common/top";
 @import "_components/common/footerBar";

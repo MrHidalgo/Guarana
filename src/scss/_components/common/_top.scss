@@ -34,6 +34,142 @@
       left: 0;
       transform: translateY(-50%);
     }
+
+
+    &-left,
+    &-right,
+    &-middle {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &-left,
+    &-right {
+      p {
+        line-height: 1;
+        color: $c-white;
+
+        &:nth-child(1) {
+          font-size: 160px;
+          font-weight: bold;
+          @include respond(es) {
+            font-size: 25px;
+          }
+          @include respond(s) {
+            font-size: 50px;
+          }
+          @include respond(m) {
+            font-size: 80px;
+          }
+          @include respond(l) {
+            font-size: 110px;
+          }
+          @include respond(el) {
+            font-size: 140px;
+          }
+          @include respond(w-min) {
+            font-size: 160px;
+          }
+        }
+        &:nth-child(2) {
+          font-size: 30px;
+          font-weight: 300;
+          @include respond(es) {
+            font-size: 10px;
+          }
+          @include respond(s) {
+            font-size: 20px;
+          }
+          @include respond(m) {
+            font-size: 26px;
+          }
+          @include respond(l) {
+            font-size: 28px;
+          }
+          @include respond(el) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    &-left {
+      left: 0;
+      @include respond(m_m) {
+        padding-top: 15px;
+      }
+      @include respond(m_s) {
+        padding-top: 7px;
+      }
+    }
+    &-middle {
+      left: 0;
+      right: 0;
+      margin-left: -10px;
+      margin-right: auto;
+      padding-top: 60px;
+      @include respond(m_s) {
+        margin-left: 0;
+        padding-top: 30px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 237px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+        @include respond(es) {
+          max-width: 100px;
+          font-size: 8px;
+        }
+        @include respond(s) {
+          max-width: 150px;
+          font-size: 14px;
+        }
+        @include respond(m) {
+          max-width: 200px;
+          font-size: 16px;
+        }
+        @include respond(l) {
+          max-width: 237px;
+          font-size: 20px;
+        }
+
+        &:nth-child(1) {
+          color: $c-white;
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          color: $c-bismark;
+          font-weight: 500;
+        }
+      }
+    }
+    &-right {
+      right: 20px;
+      @include respond(es) {
+        right: 0;
+        width: 100%;
+        max-width: 65px;
+        padding-top: 15px;
+      }
+      @include respond(s) {
+        max-width: 120px;
+      }
+      @include respond(m) {
+        max-width: 170px;
+        padding-top: 30px;
+      }
+      @include respond(l) {
+        width: auto;
+        max-width: 100%;
+        padding-top: 0;
+      }
+      @include respond(el) {
+        right: 20px;
+      }
+    }
   }
 }
 
