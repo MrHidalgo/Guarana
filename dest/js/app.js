@@ -5,62 +5,28 @@
  * @description initialize Swiper in JS.
  */
 function initSwiper() {
-  var mySwiper = new Swiper('.swiper-container.swiper--values', {
-    // Optional parameters
-    // direction: 'horizontal', // 'horizontal' or 'vertical'
-    loop: true,
-    effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
-    // autoplay: {
-    //   delay: 5000,
-    // },
-    // Disable preloading of all images
-    // preloadImages: false,
-    // Enable lazy loading
-    // lazy: {
-    //   loadPrevNext: true,
-    // },
-    slidesPerView: 1,
-    // spaceBetween: 0,
-    breakpoints: {
-      // when window width is <= 320px
-      // 320: {
-      // slidesPerView: 1,
-      // spaceBetween: 10
-      // },
-      // when window width is <= 480px
-      // 480: {
-      // slidesPerView: 2,
-      // spaceBetween: 20
-      // },
-      // when window width is <= 640px
-      // 640: {
-      // slidesPerView: 3,
-      // spaceBetween: 30
-      // }
-    },
 
-    // If we need pagination
+  var swiperValue = new Swiper('.swiper-container.swiper--values', {
+    loop: true,
+    effect: 'slide',
+    slidesPerView: 1,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
     }
+  });
 
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-
-    // on: {
-    //   "slideChange": function () {
-    //     console.log("slideChange");
-    //   },
-    // }
+  var swiperReviews = new Swiper('.swiper-container.swiper--reviews', {
+    loop: false,
+    effect: 'slide',
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function renderBullet(index, className) {
+        return '\n          <div class="' + className + '">\n            <img \n              src="./img/img-pagination-' + index + '.png" \n              srcset="./img/img-pagination-' + index + '@2x.png 2x" \n              title="" \n              class="" \n              alt=""\n            >\n          </div>\n        ';
+      }
+    }
   });
 }
 
@@ -75,10 +41,6 @@ $(document).ready(function (ev) {
    */
   var _document = $(document),
       _window = $(window);
-
-  /**
-   * @description Method call for execution
-   */
 
   /**
    * @description Init all method
@@ -143,15 +105,10 @@ $(document).ready(function (ev) {
       _window = window;
 
   /**
-   * @description Method call for execution
-   * =========================
-   */
-  initSwiper();
-
-  /**
    * @description Init all method
    */
   function initNative() {
+    initSwiper();
     preventBehavior();
     initHamburgerMenu();
   }

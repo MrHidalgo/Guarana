@@ -14,11 +14,6 @@ $(document).ready((ev) => {
 
 
   /**
-   * @description Method call for execution
-   */
-
-
-  /**
    * @description Init all method
    */
   function initJquery() {

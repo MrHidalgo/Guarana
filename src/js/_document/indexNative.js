@@ -14,16 +14,10 @@
 
 
   /**
-   * @description Method call for execution
-   * =========================
-   */
-  initSwiper();
-
-
-  /**
    * @description Init all method
    */
   function initNative() {
+    initSwiper();
     preventBehavior();
     initHamburgerMenu();
   }

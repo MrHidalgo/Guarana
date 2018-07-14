@@ -1,0 +1,130 @@
+// REVIEWS :: START
+
+.reviews {
+  .c-grid-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .swiper {
+    &-container {
+      min-height: (632px + 192px);
+      background-color: $c-aliceBlue;
+    }
+
+    &-wrapper {
+      min-height: 632px;
+      margin-top: 192px;
+      padding-top: 64px;
+    }
+
+    &-pagination {
+      display: flex;
+      top: 0;
+      bottom: auto;
+      height: 100%;
+      max-height: 192px;
+      background-color: $c-white;
+
+      > div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 5);
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        opacity: 1;
+        border-radius: 0;
+        background-color: transparent;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          @include transition(border-bottom);
+        }
+      }
+
+      img {
+        opacity: 0.5;
+        filter: grayscale(1);
+        max-width: 100%;
+        height: auto;
+        @include transition(filter, opacity);
+      }
+
+      &-bullet {
+        &-active {
+          img {
+            opacity: 1;
+            filter: grayscale(0);
+            @include transition(filter, opacity);
+          }
+
+          &:after {
+            border-bottom: 15px solid $c-aliceBlue;
+            @include transition(border-bottom);
+          }
+        }
+      }
+    }
+  }
+
+
+  &__icon {
+    @include retina-sprite($sp-quote-group);
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 49px;
+    text-align: center;
+    color: $c-hoki;
+    font-size: 30px;
+  }
+
+  &__name {
+    padding-bottom: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $c-gunmetal;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "SF-Pro-Text", sans-serif;
+  }
+
+  &__position {
+    padding-bottom: 58px;
+    text-align: center;
+    color: $c-hoki;
+    font-size: 18px;
+    font-family: "SF-Pro-Text", sans-serif;
+  }
+
+  &__btn {
+    &-wrap {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+// REVIEWS :: END
