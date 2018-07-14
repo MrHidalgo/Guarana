@@ -1,0 +1,30 @@
+// PLANG :: START
+
+mixin plangBlock(classMod, imgName, title)
+  .plang__block(class!="plang__block-" + classMod)
+    .plang__block-wrap
+      .plang__block-img
+        img(
+          src="./img/" + imgName + ".png"
+          srcset="./img/" + imgName + "@2x.png 2x"
+          title=""
+          alt=""
+        )
+      p!= title
+
+section#plang.plang
+  .c-grid
+    .plang__wrapper
+
+      +plangBlock("0", "img-plang-0", "React")
+      +plangBlock("1", "img-plang-1", "Angular")
+      +plangBlock("2", "img-plang-2", "Node JS")
+      +plangBlock("3", "img-plang-3", "Swift")
+      +plangBlock("4", "img-plang-4", "Mongo D")
+      +plangBlock("5", "img-plang-5", "Ruby on Rails")
+      +plangBlock("6", "img-plang-6", "Java Script")
+      +plangBlock("7", "img-plang-7", "Java")
+
+
+
+// PLANG :: END

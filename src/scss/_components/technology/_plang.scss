@@ -1,0 +1,52 @@
+// PLANG :: START
+
+.plang {
+  background-color: $c-aliceBlue;
+
+
+  .c-grid {
+    max-width: 1392px;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% / 4) - 24px);
+    height: 330px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    background-color: $c-white;
+
+    &-img {
+      height: 96px;
+      margin-bottom: 56px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      text-align: center;
+      color: $c-hoki;
+      font-size: 32px;
+      font-weight: 600;
+      font-family: "SF-Pro-Text", sans-serif;
+    }
+  }
+}
+
+// PLANG :: END
