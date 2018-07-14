@@ -95,9 +95,14 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 49px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
     color: $c-hoki;
     font-size: 30px;
+    @include respond(m_m) {
+      font-size: 25px;
+    }
   }
 
   &__name {
@@ -109,6 +114,9 @@
     font-size: 20px;
     font-weight: bold;
     font-family: "SF-Pro-Text", sans-serif;
+    @include respond(m_m) {
+      font-size: 16px;
+    }
   }
 
   &__position {
@@ -117,6 +125,9 @@
     color: $c-hoki;
     font-size: 18px;
     font-family: "SF-Pro-Text", sans-serif;
+    @include respond(m_m) {
+      font-size: 14px;
+    }
   }
 
   &__btn {

@@ -2199,9 +2199,18 @@ input[type="text"] {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 49px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   color: #607d8b;
   font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .reviews__text {
+    font-size: 25px;
+  }
 }
 
 
@@ -2216,6 +2225,13 @@ input[type="text"] {
   font-family: "SF-Pro-Text", sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .reviews__name {
+    font-size: 16px;
+  }
+}
+
 
 .reviews__position {
   padding-bottom: 58px;
@@ -2223,6 +2239,13 @@ input[type="text"] {
   color: #607d8b;
   font-size: 18px;
   font-family: "SF-Pro-Text", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .reviews__position {
+    font-size: 14px;
+  }
 }
 
 
