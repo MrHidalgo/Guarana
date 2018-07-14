@@ -5,7 +5,8 @@
 .header--contact,
 .header--blog,
 .header--technology,
-.header--concept
+.header--concept,
+.header--portfolioSingle
 {
   svg {
     polyline,
@@ -21,6 +22,9 @@
 
   &.header {
     background-color: $c-blackPearl;
+  }
+  &.header {
+    background-color: #39357a;
   }
 
   .hamburger-inner {
