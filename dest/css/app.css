@@ -2164,14 +2164,139 @@ input[type="text"] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .map__bg img {
+    -o-object-position: -400px;
+       object-position: -400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .map__bg img {
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 
 
 .map .c-grid {
   z-index: 1;
   position: relative;
+}
+
+
+.map__wrapper {
+  padding-top: 80px;
+}
+
+
+.map__block {
+  width: 100%;
+  max-width: 370px;
+  min-height: 243px;
+  padding: 32px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .map__block {
+    min-height: 200px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .map__block {
+    max-width: 330px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .map__block {
+    max-width: 370px;
+    padding: 32px;
+  }
+}
+
+
+.map__block-0 {
+  margin-bottom: 48px;
+}
+
+
+.map__block-title {
+  padding-bottom: 16px;
+  letter-spacing: 0.36px;
+  color: #273238;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .map__block-title {
+    font-size: 28px;
+  }
+}
+
+
+.map__block-index, .map__block-address, .map__block-phone, .map__block-link {
+  font-family: "SF-Pro-Text", sans-serif;
+}
+
+
+.map__block-phone, .map__block-link {
+  font-size: 16px;
+}
+
+
+.map__block-phone {
+  padding-bottom: 32px;
+  color: #607d8b;
+}
+
+
+.map__block-link {
+  display: inline-block;
+  color: #00acff;
+  -webkit-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+
+.map__block-link:last-child {
+  margin-left: 24px;
+}
+
+
+.map__block-link:hover {
+  color: #181e22;
+  -webkit-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+
+.map__block-index {
+  color: #77909c;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.map__block-address {
+  padding-bottom: 16px;
+  color: #b0bec5;
+  font-size: 14px;
 }
 
 
