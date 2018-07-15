@@ -1951,7 +1951,6 @@ input[type="text"] {
 
 
 .selected__box {
-  cursor: pointer;
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3);
   padding-left: 15px;

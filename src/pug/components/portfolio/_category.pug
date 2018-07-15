@@ -120,15 +120,16 @@
 
 mixin categoryBox(idx, imgName, title, text, tagArr)
   .category__box(class!="category__box-" + idx)
-    .category__box-img
-      img(
-        src="./img/" + imgName + ".png"
-        srcset="./img/" + imgName + "@2x.png 2x"
-        title=""
-        alt=""
-        translateRightImage-medium-css
-      )
-    p.category__box-title!= title
+    a(href="#", title="", class="")
+      .category__box-img
+        img(
+          src="./img/" + imgName + ".png"
+          srcset="./img/" + imgName + "@2x.png 2x"
+          title=""
+          alt=""
+          translateRightImage-medium-css
+        )
+      p.category__box-title!= title
     hr.category__box-line
     p.category__box-text!= text
     .category__box-tag
