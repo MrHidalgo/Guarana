@@ -46,10 +46,10 @@
 
     &:hover {
       img {
-        transform: translateY(-15px);
+        transform: translate(-10%, -15px);
         @include transition(transform);
         @include respond(m_m) {
-          transform: translate(-40px, -15px);
+          transform: translate(-10%, -15px);
         }
       }
     }
@@ -60,13 +60,11 @@
       img {
         display: block;
         max-width: 100%;
-        margin-left: -40px;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(-10%);
         @include transition(transform);
-        @include respond(m_m) {
-          margin-left: auto;
-          margin-right: auto;
-        }
       }
     }
 

@@ -59,6 +59,11 @@
     display: block;
     max-width: 100%;
     height: auto;
+    @include respond(m_m) {
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-10%);
+    }
   }
 }
 

@@ -1052,28 +1052,6 @@ input[type="text"] {
   right: 50%;
 }
 
-@media screen and (max-width: 767px) {
-  
-  [translateRightImage-medium-css] {
-    -webkit-transform: translateX(-40px);
-        -ms-transform: translateX(-40px);
-            transform: translateX(-40px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  
-  [translateRightImage-large-css] {
-    -webkit-transform: translateX(-52px);
-        -ms-transform: translateX(-52px);
-            transform: translateX(-52px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 
 .c-grid, .c-grid-fluid {
   width: 100%;
@@ -1127,16 +1105,6 @@ input[type="text"] {
 
 .c-grid-fluid {
   width: 100%;
-}
-
-
-.viewport-hide-js {
-  opacity: 0;
-}
-
-
-.viewport-show-js {
-  opacity: 1;
 }
 
 
@@ -1814,6 +1782,17 @@ input[type="text"] {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .home .main__img {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
 
 .solve {
   background-color: #181e22;
@@ -1914,6 +1893,17 @@ input[type="text"] {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .solve__img {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
 
 .selected {
   overflow: hidden;
@@ -1981,9 +1971,9 @@ input[type="text"] {
 
 
 .selected__box:hover img {
-  -webkit-transform: translateY(-15px);
-      -ms-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translate(-10%, -15px);
+      -ms-transform: translate(-10%, -15px);
+          transform: translate(-10%, -15px);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
@@ -1994,9 +1984,9 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .selected__box:hover img {
-    -webkit-transform: translate(-40px, -15px);
-        -ms-transform: translate(-40px, -15px);
-            transform: translate(-40px, -15px);
+    -webkit-transform: translate(-10%, -15px);
+        -ms-transform: translate(-10%, -15px);
+            transform: translate(-10%, -15px);
   }
 }
 
@@ -2009,21 +1999,17 @@ input[type="text"] {
 .selected__box-img img {
   display: block;
   max-width: 100%;
-  margin-left: -40px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .selected__box-img img {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 
@@ -2914,9 +2900,9 @@ input[type="text"] {
 
 
 .category__box:hover img {
-  -webkit-transform: translateY(-15px);
-      -ms-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translate(-10%, -15px);
+      -ms-transform: translate(-10%, -15px);
+          transform: translate(-10%, -15px);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
@@ -2927,9 +2913,9 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .category__box:hover img {
-    -webkit-transform: translate(-40px, -15px);
-        -ms-transform: translate(-40px, -15px);
-            transform: translate(-40px, -15px);
+    -webkit-transform: translate(-10%, -15px);
+        -ms-transform: translate(-10%, -15px);
+            transform: translate(-10%, -15px);
   }
 }
 
@@ -2942,21 +2928,17 @@ input[type="text"] {
 .category__box-img img {
   display: block;
   max-width: 100%;
-  margin-left: -40px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .category__box-img img {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 

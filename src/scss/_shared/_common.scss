@@ -380,16 +380,16 @@
 
 [translateRightImage-medium-css] {
   @include respond(m_m) {
-    transform: translateX(-40px);
-    margin-left: auto;
-    margin-right: auto;
+    //transform: translateX(-30px);
+    //margin-left: auto;
+    //margin-right: auto;
   }
 }
 [translateRightImage-large-css] {
   @include respond(m_m) {
-    transform: translateX(-52px);
-    margin-left: auto;
-    margin-right: auto;
+    //transform: translateX(-52px);
+    //margin-left: auto;
+    //margin-right: auto;
   }
 }
 // COMMON :: END
