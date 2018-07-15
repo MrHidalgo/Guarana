@@ -3470,6 +3470,11 @@ input[type="text"] {
 }
 
 
+.connect--thx .connect__title {
+  color: #607d8b;
+}
+
+
 .connect__bg {
   z-index: 0;
   position: absolute;
