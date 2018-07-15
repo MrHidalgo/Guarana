@@ -47,6 +47,10 @@
     min-height: 243px;
     padding: 32px;
     background-color: $c-white;
+    @include respond(m_m) {
+      margin-left: auto;
+      margin-right: auto;
+    }
     @include respond(m_s) {
       min-height: 200px;
       padding: 15px;

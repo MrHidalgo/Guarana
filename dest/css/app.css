@@ -2489,6 +2489,14 @@ input[type="text"] {
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .map__block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 575px) {
   
   .map__block {
