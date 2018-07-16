@@ -1,5 +1,46 @@
 // COMMON :: START
 
+.home,
+.portfolio,
+.contact,
+.blog,
+.technology,
+.portfolioSingle,
+.resources,
+.concept {
+  position: relative;
+
+  &:before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+  }
+}
+.portfolio,
+.contact,
+.blog,
+.technology,
+.concept {
+  &:before {
+    background-color: $c-blackPearl;
+  }
+}
+.portfolioSingle {
+  &:before {
+    background-color: #39357a;
+  }
+}
+.resources {
+  &:before {
+    background-color: $c-aliceBlue;
+  }
+}
+
 
 .header--portfolio,
 .header--contact,

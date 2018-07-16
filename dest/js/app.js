@@ -57,6 +57,39 @@ function viewPortChecker() {
 }
 
 /**
+ * @description Fixed header section
+ */
+function headerFixed() {
+  var countScroll = $(window).scrollTop(),
+      headerContainer = $('.header');
+
+  if (countScroll > 10) {
+    headerContainer.addClass("header--fixed");
+  } else {
+    headerContainer.removeClass("header--fixed");
+  }
+}
+
+/**
+ * @description Window on load.
+ */
+$(window).on("load", function (ev) {
+  headerFixed();
+});
+
+/**
+ * @description Window on resize.
+ */
+$(window).on("resize", function (ev) {});
+
+/**
+ * @description Window on scroll.
+ */
+$(window).on("scroll", function (ev) {
+  headerFixed();
+});
+
+/**
  * @description Document DOM ready.
  */
 $(document).ready(function (ev) {
