@@ -22,7 +22,9 @@
 .social
   ul.social__list
     each val, idx in socialName
-      li.social__item
+      li.social__item.viewport-hide-js(
+        data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+      )
         a.social__link(
           href!= socialName[idx].href
           class=""

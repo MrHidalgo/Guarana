@@ -64,7 +64,10 @@ section#bbox.bbox
   .c-grid
     .bbox__wrapper
       each val, idx in blogBoxData
-        .bbox__block
+        .bbox__block.viewport-hide-js(
+          data-animation-name!= (idx % 2 === 0) ? 'slideInLeft': 'slideInRight'
+          data-animation-delay!= "0.3s"
+        )
           .bbox__block-header
             .bbox__block-img
               img(

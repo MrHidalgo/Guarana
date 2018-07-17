@@ -3,10 +3,14 @@
 section#values.values
   .c-grid
     .values__wrapper
-      .values__left
+      .values__left.viewport-hide-js(
+        data-animation-delay!= "0.3s"
+      )
         h1.values__title.title.title--elarge!= "Our values"
 
-      .values__right
+      .values__right.viewport-hide-js(
+        data-animation-delay!= "0.45s"
+      )
 
         include ../macros/_swiperValues
 

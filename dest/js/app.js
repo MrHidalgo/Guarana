@@ -42,12 +42,12 @@ function viewPortChecker() {
       classToAddForFullView: 'full-visible',
       classToRemove: 'viewport-hide-js',
       removeClassAfterAnimation: true,
-      offset: 100,
+      offset: 0,
       repeat: false,
       callbackFunction: function callbackFunction(elem, action) {
 
         $(elem).css({
-          'animation-name': $(el).data('animation-name') ? $(el).data('animation-name') + ", fadeIn" : 'slideInUp, fadeIn',
+          'animation-name': $(el).data('animation-name') ? $(el).data('animation-name') + ', fadeIn' : 'slideInUp, fadeIn',
           'animation-delay': $(el).data('animation-delay') || '0s',
           'animation-duration': $(el).data('animation-duration') || '1s'
         });
@@ -107,6 +107,7 @@ $(document).ready(function (ev) {
   function initJquery() {
     inputLabelFormAnimated();
     smoothScroll("[portfolioSmooth-btn-js]");
+    viewPortChecker();
   }
   initJquery();
 

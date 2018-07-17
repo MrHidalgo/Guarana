@@ -38,13 +38,19 @@ section#bar.bar
       ul.bar__list
         each val, idx in footerBarData
           if(contentClassName === "blog" && idx === 2)
-            li.bar__item
+            li.bar__item.viewport-hide-js(
+              data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+            )
               a.bar__link.is-active(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
           else if(contentClassName === "resources" && idx === 3)
-            li.bar__item
+            li.bar__item.viewport-hide-js(
+              data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+            )
               a.bar__link.is-active(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
           else
-            li.bar__item
+            li.bar__item.viewport-hide-js(
+              data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+            )
               a.bar__link(href= footerBarData[idx].href class="" title="")!= footerBarData[idx].name
 
 // FOOTER BAR :: END

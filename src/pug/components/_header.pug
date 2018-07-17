@@ -1,6 +1,9 @@
 // HEADER :: START
 
-header#header.header(class!= "header--" + contentClassName)
+header#header.header.viewport-hide-js(
+  class!= "header--" + contentClassName
+  data-animation-name="slideInDown"
+)
   .c-grid
     .header__wrapper
 

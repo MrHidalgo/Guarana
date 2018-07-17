@@ -1158,6 +1158,16 @@ input[type="text"] {
 }
 
 
+.viewport-hide-js {
+  opacity: 0;
+}
+
+
+.viewport-show-js {
+  opacity: 1;
+}
+
+
 .logo__link {
   display: -webkit-box;
   display: -webkit-flex;

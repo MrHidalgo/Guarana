@@ -19,6 +19,7 @@ $(document).ready((ev) => {
   function initJquery() {
     inputLabelFormAnimated();
     smoothScroll("[portfolioSmooth-btn-js]");
+    viewPortChecker();
   }
   initJquery();
 

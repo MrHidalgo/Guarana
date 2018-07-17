@@ -64,10 +64,14 @@ mixin topApp()
 
 mixin footerNav(titleVal, arr)
   .footer__nav
-    p!= titleVal
+    p.viewport-hide-js(
+      data-animation-delay!= '0.3s'
+    )!= titleVal
     ul.footer__nav-list
       each val, idx in arr
-        li.footer__nav-item
+        li.footer__nav-item.viewport-hide-js(
+        data-animation-delay!= (0.4 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+        )
           a.footer__nav-link(
             href= arr[idx].href
             class=""

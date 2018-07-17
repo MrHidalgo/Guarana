@@ -5,15 +5,21 @@ section#top.top
     .top__wrapper
       +topApp()
 
-      .top__wrapper-left
+      .top__wrapper-left.viewport-hide-js(
+        data-animation-name!="zoomIn"
+      )
         p!= "82"
         p!= "Apps developed"
 
-      .top__wrapper-middle
+      .top__wrapper-middle.viewport-hide-js(
+        data-animation-name!="zoomIn"
+      )
         p!= 'Top Canadian App Developer 2018'
         p!= 'by Clutch.co'
 
-      .top__wrapper-right
+      .top__wrapper-right.viewport-hide-js(
+        data-animation-name!="zoomIn"
+      )
         p!= "16"
         p!= "Million Users Acquired"
 
