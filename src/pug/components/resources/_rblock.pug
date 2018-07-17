@@ -53,7 +53,9 @@ section#rblock.rblock
   .c-grid
     .rblock__wrapper
       each val, idx in resourcesBlockData
-        .rblock__box(class!= "rblock__box-" + idx)
+        .rblock__box.viewport-hide-js(
+          class!= "rblock__box-" + idx
+        )
           img.rblock__box-img(
             src="./img/img-rblock-" + idx + ".jpg"
             srcset="./img/img-rblock-" + idx + "@2x.jpg 2x"
