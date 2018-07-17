@@ -119,7 +119,7 @@
 
 
 mixin categoryBox(idx, imgName, title, text, tagArr)
-  .category__box(class!="category__box-" + idx)
+  .category__box.viewport-hide-js(class!="category__box-" + idx)
     a(href="#", title="", class="")
       .category__box-img
         img(
@@ -144,14 +144,15 @@ section#category.category
   .category__row.category__row-0
     .c-grid
       .category__wrapper.category__wrapper-0
-        h2.category__title!= "Browser per categories"
+        h2.category__title.viewport-hide-js!= "Browser per categories"
 
         .category__filter
           each val, idx in categoryFilterBtn
-            a.category__filter-btn(
+            a.category__filter-btn.viewport-hide-js(
               href="#" title="" class=""
               data-filterBtn!= categoryFilterBtn[idx].attr
               category-filterBtn-js
+              data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
             )!= categoryFilterBtn[idx].name
 
 

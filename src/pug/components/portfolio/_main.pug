@@ -3,7 +3,8 @@
 section#main.main
 
   .main__bg
-    img.main__img(
+    img.main__img.viewport-hide-js(
+      data-animation-name="slideInRight"
       src="./img/img-bg-portfolio__main.png"
       srcset="./img/img-bg-portfolio__main@2x.png 2x"
       title=""
@@ -14,13 +15,14 @@ section#main.main
     .main__wrapper
       .main__wrapper-left
 
-        h1.main__title.title.title--medium!= "A sum of great technology, innovative business culture, and smart people"
+        h1.main__title.title.title--medium.viewport-hide-js!= "A sum of great technology, innovative business culture, and smart people"
 
-        a.main__btn(
+        a.main__btn.viewport-hide-js(
           href="#category"
           class=""
           title!= ""
           portfolioSmooth-btn-js
+          data-animation-name="zoomIn"
         )
           i.animated.slideInDown
 
