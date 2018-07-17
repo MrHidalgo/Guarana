@@ -24,15 +24,21 @@
 
 
 mixin conceptBox(index, classMod, imgName, title, text)
-  .cblock__box(class!= (classMod) ? "cblock__box-" + index + " cblock__box--" + classMod: "cblock__box-" + index)
-    .cblock__box-left
+  .cblock__box(
+    class!= (classMod) ? "cblock__box-" + index + " cblock__box--" + classMod: "cblock__box-" + index
+  )
+    .cblock__box-left.viewport-hide-js(
+      data-animation-name="zoomIn"
+    )
       img.cblock__box-img(
         src="./img/" + imgName + ".jpg"
         srcset="./img/" + imgName + "@2x.jpg 2x"
         title=""
         alt=""
       )
-    .cblock__box-right
+    .cblock__box-right.viewport-hide-js(
+      data-animation-name="slideInRight"
+    )
       p.cblock__box-title!= title
       p.cblock__box-text!= text
 
@@ -42,8 +48,8 @@ section#cblock.cblock
     .cblock__wrapper
 
       .cblock__row.cblock__row-0
-        h1.cblock__title!= "At Guaraná, we commit to the perfect execution of your digital project."
-        p.cblock__text!= "From the creation of a new business to innovating how you reach and retain your customers, we have the all the complimentary know how you need to implement a successful mobile strategy. No matter what is your goal, we'll make sure you get there."
+        h1.cblock__title.viewport-hide-js!= "At Guaraná, we commit to the perfect execution of your digital project."
+        p.cblock__text.viewport-hide-js!= "From the creation of a new business to innovating how you reach and retain your customers, we have the all the complimentary know how you need to implement a successful mobile strategy. No matter what is your goal, we'll make sure you get there."
 
       .cblock__row.cblock__row-1
 
