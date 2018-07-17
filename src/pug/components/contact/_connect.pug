@@ -13,43 +13,59 @@ section#connect.connect
 
         form.form(action="" method="" autocomplete="off")
 
-          .form__field
+          .form__field.viewport-hide-js(
+            data-animation-delay='0.3s'
+          )
             input.form__input(type="text" name="" placeholder="" input-js)
             label.form__label!= "Name"
             .form__line
 
-          .form__field
+          .form__field.viewport-hide-js(
+            data-animation-delay='0.35s'
+          )
             input.form__input(type="text" name="" placeholder="" input-js)
             label.form__label!= "Email"
             .form__line
 
-          .form__field
+          .form__field.viewport-hide-js(
+            data-animation-delay='0.4s'
+          )
             input.form__input(type="text" name="" placeholder="" input-js)
             label.form__label!= "Phone Number"
             .form__line
 
           .form__field-group
-            .form__field
+            .form__field.viewport-hide-js(
+              data-animation-delay='0.45s'
+            )
               input.form__input(type="text" name="" placeholder="" input-js)
               label.form__label!= "City"
               .form__line
 
-            .form__field
+            .form__field.viewport-hide-js(
+              data-animation-delay='0.5s'
+            )
               input.form__input(type="text" name="" placeholder="" input-js)
               label.form__label!= "Company (Optional)"
               .form__line
 
-          .form__field.form__field--m
+          .form__field.form__field--m.viewport-hide-js(
+            data-animation-delay='0.55s'
+          )
             input.form__input(type="text" name="" placeholder="" input-js)
             label.form__label!= "Message"
             .form__line
 
-          .form__field.form__field-textarea.is-focus
+          .form__field.form__field-textarea.is-focus.viewport-hide-js(
+            data-animation-delay='0.6s'
+          )
             textarea.form__textarea(name="" placeholder="What do you want your app to do? What specific features do you have in mind? Which platform(s) are you interested in? (iOS, Android, Windows). Do you have a deadline? What does your budget look like?" input-js)
             label.form__label!= "Your Message"
             .form__line
 
-          .form__field-btn
+          .form__field-btn.viewport-hide-js.viewport-hide-js(
+            data-animation-delay='0.65s'
+          )
             +btn("form__btn connect__btn", "Send message")
 
 

@@ -16,7 +16,10 @@ section#partner.partner
 
       ul.partner__list
         each val, idx in partner
-          li.partner__item
+          li.partner__item.viewport-hide-js(
+            data-animation-name="slideInRight"
+            data-animation-delay!= (0.3 + parseFloat(0.1 * idx)).toFixed(1) + "s"
+          )
             a(href="#" title="" class="")
               img.partner__img(
                 src= partner[idx] + ".png"
