@@ -2,6 +2,9 @@
 
 .home {
   .main {
+    overflow: hidden;
+
+    
     &__wrapper {
       display: flex;
       min-height: 692px;

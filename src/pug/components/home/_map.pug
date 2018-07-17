@@ -12,7 +12,10 @@ section#map.map
   .c-grid
     .map__wrapper
 
-      .map__block.map__block-0
+      .map__block.map__block-0.viewport-hide-js(
+        data-animation-name="slideInLeft"
+        data-animation-delay="0.3s"
+      )
         p.map__block-title!= "Montreal"
 
         p.map__block-index!= "4446 Saint Laurent, Suite 1000"
@@ -23,7 +26,10 @@ section#map.map
         a.map__block-link(href="tel:+1 (514) 613 6050" title="")!= "Call Us"
         a.map__block-link(href="#" title="")!= "Email Us"
 
-      .map__block.map__block-1
+      .map__block.map__block-1.viewport-hide-js(
+        data-animation-name="slideInLeft"
+        data-animation-delay="0.4s"
+      )
         p.map__block-title!= "Toronto"
 
         p.map__block-index!= "250 University Ave, Suite 200"

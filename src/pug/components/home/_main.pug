@@ -5,13 +5,13 @@ section#main.main
     .main__wrapper
       .main__wrapper-left
 
-        h1.main__title.title!= "We develop amazing mobile apps & digital products"
+        h1.main__title.title.viewport-hide-js!= "We develop amazing mobile apps & digital products"
 
-        +btn("main__btn", "Check our work")
+        +btn("main__btn viewport-hide-js", "Check our work")
 
       .main__wrapper-right
 
-        img.main__img(
+        img.main__img.viewport-hide-js(
           src="./img/img-bg-home__main.png"
           srcset="./img/img-bg-home__main@2x.png 2x"
           title=""

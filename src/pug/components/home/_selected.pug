@@ -21,7 +21,7 @@
 
 
 mixin selectedBox(idx, imgName, title, text)
-  .selected__box(class!="selected__box-" + idx)
+  .selected__box.viewport-hide-js(class!="selected__box-" + idx)
     a(href="#", title="", class="")
       .selected__box-img
         img(
@@ -40,7 +40,7 @@ section#selected.selected
   .c-grid
     .selected__wrapper
 
-      h1.selected__title.title.title--wide!= "Selected projects"
+      h1.selected__title.title.title--wide.viewport-hide-js!= "Selected projects"
 
       .selected__row
         each val, idx in selectedBoxData
@@ -53,6 +53,6 @@ section#selected.selected
 
 
       .selected__btn-wrap
-        +btn("selected__btn", "View our full portfolio")
+        +btn("selected__btn viewport-hide-js", "View our full portfolio")
 
 // SELECTED PROJECT :: END
