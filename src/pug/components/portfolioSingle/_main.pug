@@ -4,11 +4,12 @@ section#main.main
 
   .main__bg
     .main__bg-left
-      img.main__img(
+      img.main__img.viewport-hide-js(
         src="./img/img-bg-portfolioSingle__main.png"
         srcset="./img/img-bg-portfolioSingle__main@2x.png 2x"
         title=""
         alt=""
+        data-animation-name="slideInLeft"
       )
     .main__bg-right
 
@@ -16,12 +17,12 @@ section#main.main
     .main__wrapper
       .main__wrapper-left
       .main__wrapper-right
-        h1.main__title!= "Yama"
-        p.main__subtitle!= "Let the gods judge you"
+        h1.main__title.viewport-hide-js!= "Yama"
+        p.main__subtitle.viewport-hide-js!= "Let the gods judge you"
 
         .main__btn-wrap
-          a.main__btn(href="#" class="" title="")!= "iOS"
-          a.main__btn(href="#" class="" title="")!= "Android"
+          a.main__btn.viewport-hide-js(href="#" class="" title="")!= "iOS"
+          a.main__btn.viewport-hide-js(href="#" class="" title="")!= "Android"
 
 
 // MAIN PORTFOLIO SINGLE :: END
