@@ -91,8 +91,8 @@ mixin btn(classMod, text, href)
 
 mixin descriptionText(title, text)
   .description__row
-    h2.description__title.title.title--wide!= title
-    p.description__text!= text
+    h2.description__title.title.title--wide.viewport-hide-js!= title
+    p.description__text.viewport-hide-js!= text
 
 
 //- MIXIN :: END

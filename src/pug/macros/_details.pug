@@ -2,7 +2,9 @@
 
 section#details.details
     .details__wrapper
-      .details__block.details__block-0
+      .details__block.details__block-0.viewport-hide-js(
+        data-animation-name="slideInLeft"
+      )
         p.title!= "Internet of things"
         p!= "Lorem ipsum dolor sit"
 
@@ -13,11 +15,15 @@ section#details.details
           alt=""
         )
 
-      .details__block.details__block-1
+      .details__block.details__block-1.viewport-hide-js(
+        data-animation-name="slideInRight"
+      )
         p.title!= "Augmented<br>Reality"
 
 
-      .details__block.details__block-2
+      .details__block.details__block-2.viewport-hide-js(
+        data-animation-name="slideInLeft"
+      )
         p.title.title--elarge!= "Beacon"
 
         img(
@@ -27,7 +33,9 @@ section#details.details
           alt=""
         )
 
-      .details__block.details__block-3
+      .details__block.details__block-3.viewport-hide-js(
+        data-animation-name="slideInRight"
+      )
         p!= "Web Apps"
 
         img(

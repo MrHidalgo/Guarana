@@ -74,7 +74,7 @@
 
 
 mixin specificationBlock(idx, title, text)
-  .specification__block-wrap
+  .specification__block-wrap.viewport-hide-js
     .specification__block(class!= "specification__block-" + idx)
       p.specification__block-title!= title
       hr.specification__block-line
@@ -85,18 +85,18 @@ section#specification.specification
   .c-grid
 
     .specification__wrapper.specification__wrapper-0
-      h3.specification__title.title.title--wide!= "User Account"
+      h3.specification__title.title.title--wide.viewport-hide-js!= "User Account"
 
       .specification__row
         each val, idx in specificationData0
           +specificationBlock(
             idx,
-          specificationData0[idx].title,
-          specificationData0[idx].text
+            specificationData0[idx].title,
+            specificationData0[idx].text
           )
 
     .specification__wrapper.specification__wrapper-1
-      h3.specification__title.title.title--wide!= "Features"
+      h3.specification__title.title.title--wide.viewport-hide-js!= "Features"
 
       .specification__row
         each val, idx in specificationData1
@@ -107,7 +107,7 @@ section#specification.specification
           )
 
     .specification__wrapper.specification__wrapper-2
-      h3.specification__title.title.title--wide!= "Location"
+      h3.specification__title.title.title--wide.viewport-hide-js!= "Location"
 
       .specification__row
         each val, idx in specificationData2
