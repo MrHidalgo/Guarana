@@ -11,6 +11,7 @@
 
 
   &__block {
+    cursor: pointer;
     overflow: hidden;
     position: relative;
     width: calc(50% - 4px);
@@ -21,6 +22,34 @@
       padding-top: 30px;
       padding-bottom: 30px;
       margin: 0 !important;
+    }
+
+    &:hover {
+      .details__block--hide {
+        display: block;
+        animation-name: zoomIn;
+        animation-duration: 0.5s;
+      }
+    }
+
+    &--hide {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+
+      > p {
+        margin-bottom: 30px;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
     }
 
     img {
@@ -40,7 +69,11 @@
       margin-bottom: 8px;
       background-color: $c-aliceBlueMedium;
 
-      p {
+      .details__block--hide {
+        background-color: rgba($c-aliceBlueMedium, 0.97);
+      }
+
+      > p {
         position: absolute;
         width: 100%;
         max-width: 471px;
@@ -100,7 +133,11 @@
         background-position: center;
       }
 
-      p {
+      .details__block--hide {
+        background-color: rgba($c-white, 0.97);
+      }
+
+      > p {
         position: absolute;
         left: 312px;
         top: 90px;
@@ -120,7 +157,16 @@
       margin-right: 4px;
       background-color: $c-blackPearl;
 
-      p {
+      .details__block--hide {
+        background-color: rgba($c-blackPearl, 0.97);
+
+        > p,
+        > span {
+          color: $c-white;
+        }
+      }
+
+      > p {
         position: absolute;
         right: 354px;
         top: 50%;
@@ -150,7 +196,16 @@
       margin-left: 4px;
       background-color: $c-deepSkyBlue;
 
-      p {
+      .details__block--hide {
+        background-color: rgba($c-deepSkyBlue, 0.97);
+
+        > p,
+        > span {
+          color: $c-white;
+        }
+      }
+
+      > p {
         margin-top: 67px;
         text-align: center;
         color: $c-white;
