@@ -17,11 +17,12 @@
     width: calc(50% - 4px);
     height: 640px;
     @include respond(m_m) {
-      width: 100%;
-      height: auto;
+      width: calc(100vw - 16px);
+      height: calc(100vh - (70px + 16px));
       padding-top: 30px;
       padding-bottom: 30px;
       margin: 0 !important;
+      margin-bottom: 8px !important;
     }
 
     &:hover {
@@ -68,6 +69,11 @@
       margin-right: 4px;
       margin-bottom: 8px;
       background-color: $c-aliceBlueMedium;
+      @include respond(m_m) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .details__block--hide {
         background-color: rgba($c-aliceBlueMedium, 0.97);
@@ -156,6 +162,11 @@
     &-2 {
       margin-right: 4px;
       background-color: $c-blackPearl;
+      @include respond(m_m) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .details__block--hide {
         background-color: rgba($c-blackPearl, 0.97);
@@ -195,6 +206,11 @@
     &-3 {
       margin-left: 4px;
       background-color: $c-deepSkyBlue;
+      @include respond(m_m) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .details__block--hide {
         background-color: rgba($c-deepSkyBlue, 0.97);
